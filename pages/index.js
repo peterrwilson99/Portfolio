@@ -10,7 +10,7 @@ export default function Index() {
     <main>
       <Hero />
       <ProjectHighlight />
-      <About />
+      {/* <About /> */}
     </main>
   );
 }

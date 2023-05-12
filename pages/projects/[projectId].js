@@ -1,11 +1,54 @@
+import { Button, Container, Typography } from '@mui/material';
 import React from 'react'
+import ImageGallery from '../../src/components/ImageGallery';
 import projects from '../../src/projects.json'
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LanguageIcon from '@mui/icons-material/Language';
 
 function ProjectView({ project }) {
-    const {id, name, date, preview, description, images} = project
+    const {id, name, date, preview, description, images, website, github} = project
     return (
         <main className="pt-12">
-            {name}
+            <Container maxWidth="md">
+                <ImageGallery images={images} className="my-4" />
+                <Typography
+                    variant="h3"
+                    component="h2"
+                >
+                    {name}
+                </Typography>
+                <div className="flex flex-row justify-between w-full mb-4">
+                    <div className="align-center">
+                        <Typography
+                            variant="subtitle2"
+                        >
+                            {date}
+                        </Typography>
+                    </div>
+                    <div className='text-right'>
+                        {github ? 
+                            <Button variant="outlined" endIcon={<GitHubIcon />} onClick={() => window.open(github)}>
+                                View GitHub
+                            </Button>
+                            :
+                            <></>
+                        }
+                        {website ? 
+                            <Button className="ml-2" variant="outlined" endIcon={<LanguageIcon />} onClick={() => window.open(website)}>
+                                View Website
+                            </Button>
+                            :
+                            <></>
+                        }
+                    </div>
+                </div>
+                <Typography
+                    variant="body1"
+                    gutterBottom
+                >
+                    {description}
+                </Typography>
+            </Container>
         </main>
     )
 }
