@@ -20,7 +20,7 @@ function Hero() {
             >
                 <Typewriter
                     options={{
-                        strings: ['a Developer', 'an Engineer'],
+                        strings: ['a Developer', 'an Engineer', ''],
                         autoStart: true,
                         loop: true,
                         pauseFor: 2000
@@ -33,7 +33,7 @@ function Hero() {
                 sx={{maxWidth: 750}}
             >
                 Welcome to my corner of the web. I'm Peter Wilson, a Software Engineer with a passion
-                for all things digital. Whether it's crafting stunning designs, writing elegant code, or bringing
+                for all things development. Whether it's crafting stunning designs, writing efficient code, or bringing
                 ideas to life, I love diving into exciting projects.
             </Typography>
             <div className="mt-4">

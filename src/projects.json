@@ -1,23 +1,33 @@
 [
     {
         "id": "1",
-        "name": "Project 1",
-        "date": "May 2023",
-        "preview": "Short preview description 1",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur nunc quis mauris pellentesque, nec tristique lacus cursus. Fusce accumsan eros sit amet feugiat semper. Nam sit amet dolor at arcu sagittis tristique ac ut velit. Pellentesque vel gravida ex. Aliquam sed congue massa. Fusce nec tellus vel nisi tincidunt ultrices. Donec faucibus ante vel tempor rhoncus. Aliquam id ligula nec urna semper placerat.",
+        "name": "Scalable Day Trading Application",
+        "date": "April 2023",
+        "preview": "Distributed day trading application using gRPC, NextJS, MaterialUI, and more.",
+        "description": "Day-Trader is a scalable day trading application developed as part of UVic's Scalable Systems offering (SENG 468). It provides users with the ability to engage in day trading activities through a user-friendly GUI and a command-line interface (CLI).\nThe architecture of Day-Trader is designed for scalability and efficiency. It consists of various components such as the Web Browser, Next Server, CLI, Transaction Server, Database (Postgres), Quote Server Adaptor, and Uvic Quote Server. These components communicate with each other using gRPC calls and TCP sockets to handle user requests, update the database, and retrieve stock quotes.\n This project included three students, with my primary contributions being to the frontend.",
         "images": [
-            "https://source.unsplash.com/1920x1080/?coding"
-        ]
+            "https://github.com/MarcusDunn/day-trader/blob/main/readmeimages/1.png?raw=true",
+            "https://github.com/MarcusDunn/day-trader/blob/main/readmeimages/2.png?raw=true",
+            "https://github.com/MarcusDunn/day-trader/blob/main/readmeimages/3.png?raw=true",
+            "https://github.com/MarcusDunn/day-trader/blob/main/readmeimages/4.png?raw=true"
+        ],
+        "github": "https://github.com/MarcusDunn/day-trader",
+        "website": null
     },
     {
         "id": "2",
-        "name": "Project 2",
-        "date": "May 2023",
-        "preview": "Short preview description 2",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur nunc quis mauris pellentesque, nec tristique lacus cursus. Fusce accumsan eros sit amet feugiat semper. Nam sit amet dolor at arcu sagittis tristique ac ut velit. Pellentesque vel gravida ex. Aliquam sed congue massa. Fusce nec tellus vel nisi tincidunt ultrices. Donec faucibus ante vel tempor rhoncus. Aliquam id ligula nec urna semper placerat.",
+        "name": "Miguel Manguerra's Portfolio",
+        "date": "August 2022",
+        "preview": "Portfolio containing Miguel's projects using NextJS with MaterialUI components.",
+        "description": "Portfolio containing Miguel's projects using NextJS with MaterialUI components.",
         "images": [
-            "https://source.unsplash.com/1920x1080/?city"
-        ]
+            "/images/migoy1.png",
+            "/images/migoy2.png",
+            "/images/migoy3.png",
+            "/images/migoy4.png"
+        ],
+        "github": "https://github.com/peterrwilson99/miguel-next",
+        "website": "https://miguelmanguerra.vercel.app/"
     },
     {
         "id": "3",
@@ -27,7 +37,9 @@
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur nunc quis mauris pellentesque, nec tristique lacus cursus. Fusce accumsan eros sit amet feugiat semper. Nam sit amet dolor at arcu sagittis tristique ac ut velit. Pellentesque vel gravida ex. Aliquam sed congue massa. Fusce nec tellus vel nisi tincidunt ultrices. Donec faucibus ante vel tempor rhoncus. Aliquam id ligula nec urna semper placerat.",
         "images": [
             "https://source.unsplash.com/1920x1080/?weightlifting"
-        ]
+        ],
+        "github": null,
+        "website": null
     },
     {
         "id": "4",
@@ -37,7 +49,9 @@
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur nunc quis mauris pellentesque, nec tristique lacus cursus. Fusce accumsan eros sit amet feugiat semper. Nam sit amet dolor at arcu sagittis tristique ac ut velit. Pellentesque vel gravida ex. Aliquam sed congue massa. Fusce nec tellus vel nisi tincidunt ultrices. Donec faucibus ante vel tempor rhoncus. Aliquam id ligula nec urna semper placerat.",
         "images": [
             "https://source.unsplash.com/1920x1080/?victoria"
-        ]
+        ],
+        "github": null,
+        "website": null
     },
     {
         "id": "5",
@@ -47,7 +61,9 @@
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur nunc quis mauris pellentesque, nec tristique lacus cursus. Fusce accumsan eros sit amet feugiat semper. Nam sit amet dolor at arcu sagittis tristique ac ut velit. Pellentesque vel gravida ex. Aliquam sed congue massa. Fusce nec tellus vel nisi tincidunt ultrices. Donec faucibus ante vel tempor rhoncus. Aliquam id ligula nec urna semper placerat.",
         "images": [
             "https://source.unsplash.com/1920x1080/?BMWE46"
-        ]
+        ],
+        "github": null,
+        "website": null
     },
     {
         "id": "6",
@@ -57,6 +73,8 @@
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur nunc quis mauris pellentesque, nec tristique lacus cursus. Fusce accumsan eros sit amet feugiat semper. Nam sit amet dolor at arcu sagittis tristique ac ut velit. Pellentesque vel gravida ex. Aliquam sed congue massa. Fusce nec tellus vel nisi tincidunt ultrices. Donec faucibus ante vel tempor rhoncus. Aliquam id ligula nec urna semper placerat.",
         "images": [
             "https://source.unsplash.com/1920x1080/?coffee"
-        ]
+        ],
+        "github": null,
+        "website": null
     }
 ]

@@ -30,17 +30,17 @@ function Navigation() {
         <nav>
             <ButtonBase href="/about" sx={{ my: 1, mx: 1.5 }}>
                 <Typography className="font-medium" color='text'>
-                About
+                  About
+                </Typography>
+            </ButtonBase>
+            <ButtonBase href="/projects" sx={{ my: 1, mx: 1.5 }}>
+                <Typography className="font-medium" color='text'>
+                  Projects
                 </Typography>
             </ButtonBase>
             <ButtonBase href="/contact" sx={{ my: 1, mx: 1.5 }}>
                 <Typography className="font-medium" color='text'>
-                Projects
-                </Typography>
-            </ButtonBase>
-            <ButtonBase href="/contact" sx={{ my: 1, mx: 1.5 }}>
-                <Typography className="font-medium" color='text'>
-                Contact
+                  Contact
                 </Typography>
             </ButtonBase>
         </nav>

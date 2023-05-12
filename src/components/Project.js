@@ -16,7 +16,7 @@ function Project({ project }) {
                     }}
                     image={images[0]}
                     title={name}
-                    />
+                />
                 <CardContent>
                     <Typography variant="h5">
                         {name}
