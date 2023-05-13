@@ -1,7 +1,7 @@
 import React from 'react'
 import projects from '../../src/projects.json'
-import { Box, Container, Typography } from '@mui/material'
-import Project from '../../src/components/Project'
+import { Typography } from '@mui/material'
+import ProjectHighlight from '../../src/components/ProjectHighlight'
 
 function index() {
     return (
@@ -14,13 +14,7 @@ function index() {
                     Take a glimpse into my coding endeavors as we explore a collection of passion projects.
                 </Typography>
             </div>
-            <Box className="w-3/4 m-auto">
-                <div className="grid grid-cols-3 gap-4">
-                    {projects.map((project) => {
-                        return <Project project={project} />
-                    })}
-                </div>
-            </Box>
+            <ProjectHighlight projects={projects} />
         </main>
     )
 }

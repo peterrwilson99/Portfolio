@@ -1,23 +1,29 @@
 import React from 'react'
-import projects from '../projects.json'
-import { Box, Button, Typography } from '@mui/material'
+import { Box, Button, useMediaQuery, useTheme } from '@mui/material'
 import Project from './Project'
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 
-function ProjectHighlight() {
-
+function ProjectHighlight({ projects, viewAll }) {
+    const theme = useTheme();
+    const TwoCol = useMediaQuery(theme.breakpoints.down(1800));
+    const OneCol = useMediaQuery(theme.breakpoints.down(1200));
+    let cols = OneCol ? 1 : TwoCol ? 2 : 3;
+    console.log(cols)
+    
     return (
-        <Box className="w-3/4 m-auto">
-            <div className="grid grid-cols-3 gap-4">
-                <Project project={projects[0]} />
-                <Project project={projects[1]} />
-                <Project project={projects[2]} />
+        <Box className={`${OneCol ? 'w-[90%]' : 'w-3/4'} m-auto`}>
+            <div className={OneCol ? 'm-auto' : `grid grid-cols-${cols} gap-4`}>
+                {projects.map((project) => (<Project className="m-auto" project={project} />))}
             </div>
-            <div className='text-right my-4'>
-                <Button endIcon={<ArrowRightAltIcon/>} variant="outlined" color="primary" href="/projects">
-                    View All Projects
-                </Button>
-            </div>
+            {viewAll ? 
+                <div className='text-right my-4'>
+                    <Button endIcon={<ArrowRightAltIcon/>} variant="outlined" color="primary" href="/projects">
+                        View All Projects
+                    </Button>
+                </div>
+                :
+                <></>
+            }
         </Box>
     )
 }

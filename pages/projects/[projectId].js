@@ -18,7 +18,7 @@ function ProjectView({ project }) {
                     {name}
                 </Typography>
                 <div className="flex flex-row justify-between w-full mb-4">
-                    <div className="align-center">
+                    <div className="align-center flex flex-col justify-center">
                         <Typography
                             variant="subtitle2"
                         >
