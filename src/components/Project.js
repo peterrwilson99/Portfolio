@@ -4,7 +4,7 @@ import React from 'react'
 function Project({ project }) {
     const {id, name, date, preview, description, images} = project
     return (
-        <Card elevation={0} className="m-auto w-full my-4" sx={{maxWidth: 750, minWidth: 350}}>
+        <Card elevation={0} className="m-auto my-4" sx={{width: 'min(90%,350)'}}>
             <CardActionArea href={"/projects/".concat(id)}>
                 <CardMedia
                     sx={{

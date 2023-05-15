@@ -10,7 +10,7 @@ export default function Index() {
   return (
     <main>
       <Hero />
-      <ProjectHighlight projects={projects.slice(0, 3)} viewAll={true} />
+      <ProjectHighlight projects={projects.slice(0, 2)} viewAll={true} />
       {/* <About /> */}
     </main>
   );
