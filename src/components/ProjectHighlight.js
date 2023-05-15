@@ -7,12 +7,10 @@ function ProjectHighlight({ projects, viewAll }) {
     const theme = useTheme();
     const TwoCol = useMediaQuery(theme.breakpoints.down(1800));
     const OneCol = useMediaQuery(theme.breakpoints.down(1200));
-    let cols = OneCol ? 1 : TwoCol ? 2 : 3;
-    console.log(cols)
     
     return (
         <Box className={`${OneCol ? 'w-[90%]' : 'w-3/4'} m-auto`}>
-            <div className={OneCol ? 'm-auto' : `grid grid-cols-${cols} gap-4`}>
+            <div className={OneCol ? 'm-auto' : TwoCol ? `grid grid-cols-2 gap-4`: `grid grid-cols-3 gap-4`}>
                 {projects.map((project) => (<Project className="m-auto" project={project} />))}
             </div>
             {viewAll ? 

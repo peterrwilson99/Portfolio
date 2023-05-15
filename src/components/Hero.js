@@ -37,7 +37,7 @@ function Hero() {
                 ideas to life, I love diving into exciting projects.
             </Typography>
             <div className="mt-4">
-                <Button className="mr-2 my-2" color="secondary" variant="contained" onClick={() => window.open('/files/resume.pdf')}>
+                <Button className="mr-2 my-2" href="#" color="secondary" variant="contained" onClick={() => window.open('/files/resume.pdf')}>
                     Resume
                 </Button>
                 <Button className="mx-2 my-2" href="/projects" variant="outlined">
