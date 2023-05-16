@@ -17,8 +17,8 @@ function ImageGallery({ images }) {
       </div>
       <div className="gallery flex flex-row flex-wrap justify-left my-4">
         {images.map(
-          (image) => (
-              <ButtonBase className={`m-2 ${image === selectedImage ? "" : 'brightness-50'}`} onClick={() => {handleGalleryClick(image)}}>
+          (image, index) => (
+              <ButtonBase key={index} className={`m-2 ${image === selectedImage ? "" : 'brightness-50'}`} onClick={() => {handleGalleryClick(image)}}>
                 <img src={image} width="150px" style={{borderRadius: 2}}/>
               </ButtonBase>
             )

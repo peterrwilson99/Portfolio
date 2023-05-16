@@ -4,7 +4,7 @@
         "name": "Scalable Day Trading Application",
         "date": "April 2023",
         "preview": "Distributed day trading application using gRPC, NextJS, MaterialUI, and more.",
-        "description": "Day-Trader is a scalable day trading application developed as part of UVic's Scalable Systems offering (SENG 468). It provides users with the ability to engage in day trading activities through a user-friendly GUI and a command-line interface (CLI).\nThe architecture of Day-Trader is designed for scalability and efficiency. It consists of various components such as the Web Browser, Next Server, CLI, Transaction Server, Database (Postgres), Quote Server Adaptor, and Uvic Quote Server. These components communicate with each other using gRPC calls and TCP sockets to handle user requests, update the database, and retrieve stock quotes.\n This project included three students, with my primary contributions being to the frontend.",
+        "description": "Day-Trader is a scalable day trading application developed as part of UVic's Scalable Systems offering (SENG 468). It provides users with the ability to engage in day trading activities through a user-friendly GUI and a command-line interface (CLI).\n\nThe architecture of Day-Trader is designed for scalability and efficiency. It consists of various components such as the Web Browser, Next Server, CLI, Transaction Server, Database (Postgres), Quote Server Adaptor, and Uvic Quote Server. These components communicate with each other using gRPC calls and TCP sockets to handle user requests, update the database, and retrieve stock quotes.\n\n This project included three students, with my primary contributions being to the frontend.",
         "images": [
             "https://github.com/MarcusDunn/day-trader/blob/main/readmeimages/1.png?raw=true",
             "https://github.com/MarcusDunn/day-trader/blob/main/readmeimages/2.png?raw=true",
@@ -31,15 +31,17 @@
     },
     {
         "id": "3",
-        "name": "Project 3",
-        "date": "May 2023",
-        "preview": "Short preview description 3",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur nunc quis mauris pellentesque, nec tristique lacus cursus. Fusce accumsan eros sit amet feugiat semper. Nam sit amet dolor at arcu sagittis tristique ac ut velit. Pellentesque vel gravida ex. Aliquam sed congue massa. Fusce nec tellus vel nisi tincidunt ultrices. Donec faucibus ante vel tempor rhoncus. Aliquam id ligula nec urna semper placerat.",
+        "name": "Quizzie - A Quiz App for Midterm Preparation",
+        "date": "February 2023",
+        "preview": "A quiz app for UVIC courses lacking practice midterms, using AI tooling to generate realistic questions from notes.",
+        "description": "Quizzie is a quiz application developed to provide students with practice materials for midterms that lacked official practice exams. Built using NextJS, React, and MaterialUI components, Quizzie offers an intuitive interface for students to test their knowledge. \n\nUsing markdown notes and ChatGPT, we generated quizzes in a specific JSON format that could be directly imported into the React Quiz component. Originally designed for a single midterm, the app evolved to accommodate multiple classes and tests, attracting a community of students seeking comprehensive test preparation. \n\nWith NextJS, React, and MaterialUI, Quizzie delivers a visually appealing and user-friendly experience. Its intelligent quiz generation system, powered by ChatGPT, ensures a wide range of questions to cover the course material effectively.",
         "images": [
-            "https://source.unsplash.com/1920x1080/?weightlifting"
+            "/images/quizzie1.png",
+            "/images/quizzie2.png",
+            "/images/quizzie3.png"
         ],
-        "github": null,
-        "website": null
+        "github": "https://github.com/peterrwilson99/QuizApp",
+        "website": "https://quizzie-uvic.vercel.app/"
     },
     {
         "id": "4",

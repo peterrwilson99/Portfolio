@@ -5,10 +5,13 @@ import {
   ButtonBase,
   Toolbar,
   Typography,
+  alpha,
   useTheme,
 } from '@mui/material';
 
 function Navigation() {
+  const theme = useTheme();
+  const gradientColor = alpha(theme.palette.background.default, 1);
 
   return (
     <AppBar
@@ -16,7 +19,7 @@ function Navigation() {
       style={{
         backgroundColor: 'transparent',
         boxShadow: 'none',
-        backgroundImage: 'inherit',
+        backgroundImage: `linear-gradient(${gradientColor}, transparent)`,
       }}
     >
       <Toolbar sx={{ flexWrap: 'wrap' }}>

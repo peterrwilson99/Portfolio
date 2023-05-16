@@ -7,6 +7,16 @@ import LanguageIcon from '@mui/icons-material/Language';
 
 function ProjectView({ project }) {
     const {id, name, date, preview, description, images, website, github} = project
+    const formattedDescription = description.split('\n').map((paragraph, index) => (
+        <Typography
+            variant="body1"
+            className="text-lg"
+            gutterBottom
+            key={index}
+        >
+            {paragraph}
+        </Typography>
+    ));
     return (
         <main className="pt-12">
             <Container maxWidth="md">
@@ -42,12 +52,7 @@ function ProjectView({ project }) {
                         }
                     </div>
                 </div>
-                <Typography
-                    variant="body1"
-                    gutterBottom
-                >
-                    {description}
-                </Typography>
+                {formattedDescription}
             </Container>
         </main>
     )

@@ -30,6 +30,7 @@ export default function MyApp(props) {
     <ThemeContext.Provider value={{theme, setMyTheme}}>
       <CacheProvider value={emotionCache}>
         <Head>
+          <title>Peter Wilson</title>
           <meta name="viewport" content="initial-scale=1, width=device-width" />
         </Head>
         <ThemeProvider theme={theme}>
