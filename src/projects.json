@@ -45,38 +45,39 @@
     },
     {
         "id": "4",
-        "name": "Project 4",
-        "date": "May 2023",
-        "preview": "Short preview description 4",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur nunc quis mauris pellentesque, nec tristique lacus cursus. Fusce accumsan eros sit amet feugiat semper. Nam sit amet dolor at arcu sagittis tristique ac ut velit. Pellentesque vel gravida ex. Aliquam sed congue massa. Fusce nec tellus vel nisi tincidunt ultrices. Donec faucibus ante vel tempor rhoncus. Aliquam id ligula nec urna semper placerat.",
+        "name": "Wordle Solver",
+        "date": "November 2022",
+        "preview": "A python application to solve Wordles using a large word list and a word frequency list.",
+        "description": "This Python application serves as a handy Wordle helper, providing options and suggestions for the popular word-guessing game. By employing various methods and functionalities, such as removing letters, checking the existence of specific letters at certain indices, and generating top guess words, the application assists users in narrowing down the potential solutions.\n\nAs this was a simple quick project for myself there is currently no user interface, and future work could include creating a Flask server to where a frontend application could query this tool.",
         "images": [
-            "https://source.unsplash.com/1920x1080/?victoria"
+            "/images/wordle1.png"
         ],
-        "github": null,
+        "github": "https://github.com/peterrwilson99/WordleHelp",
         "website": null
     },
     {
         "id": "5",
-        "name": "Project 5",
-        "date": "May 2023",
-        "preview": "Short preview description 5",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur nunc quis mauris pellentesque, nec tristique lacus cursus. Fusce accumsan eros sit amet feugiat semper. Nam sit amet dolor at arcu sagittis tristique ac ut velit. Pellentesque vel gravida ex. Aliquam sed congue massa. Fusce nec tellus vel nisi tincidunt ultrices. Donec faucibus ante vel tempor rhoncus. Aliquam id ligula nec urna semper placerat.",
+        "name": "Sudoku",
+        "date": "September 2021",
+        "preview": "A simple sudoku application built using create-react-app and basic React components.",
+        "description": "A simple sudoku application built using create-react-app and basic React components.",
         "images": [
-            "https://source.unsplash.com/1920x1080/?BMWE46"
+            "/images/sudoku1.png"
         ],
         "github": null,
-        "website": null
+        "website": "https://pitasudoku.web.app/"
     },
     {
         "id": "6",
-        "name": "Project 6",
-        "date": "May 2023",
-        "preview": "Short preview description 6",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur nunc quis mauris pellentesque, nec tristique lacus cursus. Fusce accumsan eros sit amet feugiat semper. Nam sit amet dolor at arcu sagittis tristique ac ut velit. Pellentesque vel gravida ex. Aliquam sed congue massa. Fusce nec tellus vel nisi tincidunt ultrices. Donec faucibus ante vel tempor rhoncus. Aliquam id ligula nec urna semper placerat.",
+        "name": "Pretty Clock",
+        "date": "October 2022",
+        "preview": "A simple web application to display the time with an aesthetic background.",
+        "description": "A simple web application to display the time with an aesthetic background using NextJS and Vercel. Great for work stations where a monitor isn't being used. Uses Unsplash.com for its random image generator, where every minute the application grabs a new image to display.",
         "images": [
-            "https://source.unsplash.com/1920x1080/?coffee"
+            "/images/clock1.png",
+            "/images/clock2.png"
         ],
         "github": null,
-        "website": null
+        "website": "https://prettyclock.vercel.app/"
     }
 ]
