@@ -15,15 +15,19 @@ function ImageGallery({ images }) {
       <div className="selected-image">
         <img src={selectedImage} alt="" />
       </div>
-      <div className="gallery flex flex-row flex-wrap justify-left my-4">
-        {images.map(
-          (image, index) => (
-              <ButtonBase key={index} className={`m-2 ${image === selectedImage ? "" : 'brightness-50'}`} onClick={() => {handleGalleryClick(image)}}>
-                <img src={image} width="150px" style={{borderRadius: 2}}/>
-              </ButtonBase>
-            )
-        )}
-      </div>
+      {images.length  && images.length > 1 ? 
+        <div className="gallery flex flex-row flex-wrap justify-left my-4">
+          {images.map(
+            (image, index) => (
+                <ButtonBase key={index} className={`m-2 ${image === selectedImage ? "" : 'brightness-50'}`} onClick={() => {handleGalleryClick(image)}}>
+                  <img src={image} width="150px" style={{borderRadius: 2}}/>
+                </ButtonBase>
+              )
+          )}
+        </div>
+        :
+        <></>
+      }
     </Box>
   )
 }

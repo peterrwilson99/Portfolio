@@ -1,7 +1,7 @@
 import { Button, Container, Typography } from '@mui/material';
 import React from 'react'
 import ImageGallery from '../../src/components/ImageGallery';
-import projects from '../../src/projects.json'
+import { projects } from '../../src/projects/projects'
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LanguageIcon from '@mui/icons-material/Language';
 

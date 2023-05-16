@@ -1,5 +1,5 @@
 import React from 'react'
-import projects from '../../src/projects.json'
+import { projects } from '../../src/projects/projects'
 import { Typography } from '@mui/material'
 import ProjectHighlight from '../../src/components/ProjectHighlight'
 
