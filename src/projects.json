@@ -79,5 +79,32 @@
         ],
         "github": null,
         "website": "https://prettyclock.vercel.app/"
+    },
+    {
+        "id": "7",
+        "name": "Intermediate Data Format (IDF) File Updater",
+        "date": "April 2021",
+        "preview": "IDF Updater project, developed for the Energy In Cities Group, to update IDF files within python scripts and notebooks.",
+        "description": "The IDF Updater python project, developed for the Energy In Cities Group, simplifies the task of updating EnergyPlus IDF files to newer versions. With support for updating from version 8.0 to the latest EnergyPlus version, this project offers a convenient solution for Linux and MacOS users, providing the ability to update singular IDF files, lists of IDF files, or entire directories of IDF files with ease. By automating the conversion process, the IDF Updater saves time and effort, ensuring that EnergyPlus simulations are up to date and in sync with the latest features and improvements.\n\n\n Can be installed using `pip install idf-updater`",
+        "images": [
+            "/images/idf1.png",
+            "/images/idf2.png"
+        ],
+        "github": "https://gitlab.com/energyincities/idf_updater",
+        "website": "https://idf-updater.readthedocs.io/en/latest/"
+    },
+    {
+        "id": "8",
+        "name": "UVIC Term Timeline Creator",
+        "date": "November 2021",
+        "preview": "A python application to help students plan what terms to schedule courses in based on offering dates and course weights.",
+        "description": "A python application to help students plan what terms to schedule courses in based on offering dates and course weights.",
+        "images": [
+            "/images/uvic1.png",
+            "/images/uvic2.png",
+            "/images/uvic3.png"
+        ],
+        "github": "https://gitlab.com/peterrwilson99/uvic-timeline-creator",
+        "website": "https://uvic-timeline-creator.readthedocs.io/en/latest/"
     }
 ]
