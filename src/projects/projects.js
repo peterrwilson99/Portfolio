@@ -30,6 +30,18 @@ export const projects = [
         website: "https://miguelmanguerra.vercel.app/"
     },
     {
+        id: "9",
+        name: "Scalable Social Media Backend",
+        date: "March 2023",
+        preview: "A scalable social media application using Express.js, Nginx, Redis, and MongoDB",
+        description: "This application was part of the SENG 468 Spring offering, where the goal was to design a scalable and fault-tolerant social media platform that enables users to create and share posts. The platform needed to handle a large number of concurrent users and support real-time notifications and messaging. To achieve this, a combination of MongoDB, Redis, Nginx Load Balancer, and redis queuing were utilized. The solution included components such as a MongoDB database for storing user, post, comment, and notification information, a Redis cache for improving performance, an Nginx Load Balancer for distributing requests and enhancing availability, and a messaging system using Redis for real-time notifications and user messaging. The project was containerized using Docker, with a provided Docker Compose file for easy setup and deployment. Additionally, scripts were developed to populate the database with sample data for testing, and perform basic CRUD operations on the database.",
+        images: [
+            "/images/scalable1.png",
+        ],
+        github: "https://github.com/peterrwilson99/SENG468ScalableBackend",
+        website: null
+    },
+    {
         id: "3",
         name: "Quizzie - A Quiz App for Midterm Preparation",
         date: "February 2023",
@@ -106,5 +118,5 @@ export const projects = [
         ],
         github: "https://gitlab.com/peterrwilson99/uvic-timeline-creator",
         website: "https://uvic-timeline-creator.readthedocs.io/en/latest/"
-    }
+    },
 ]
