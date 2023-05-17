@@ -110,8 +110,11 @@ const ContactForm = () => {
           noValidate
           sx={{ mt: 1 }}
         >
-          <Typography variant="h4" gutterBottom>
-            Contact Form
+          <Typography variant="h2" gutterBottom align="center">
+            Send me an email!
+          </Typography>
+          <Typography variant="h6" gutterBottom align="center">
+            Feel free to send me an email, along with your email so I can get back to you. Looking forward to hearing from you 😀
           </Typography>
           <TextField
             variant="outlined"

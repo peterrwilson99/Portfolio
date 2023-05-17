@@ -25,7 +25,7 @@ function Project({ project }) {
                     <Typography variant="subtitle2" gutterBottom>
                         {date}
                     </Typography>
-                    <Typography variant="body2" color="text.secondary">
+                    <Typography variant="body2" color="text.secondary" flexGrow>
                         {preview}
                     </Typography>
                     {tags.map(tag => GetChip(tag))}
