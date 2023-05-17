@@ -1,11 +1,12 @@
 import { Box, Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Paper, Typography } from '@mui/material'
 import React from 'react'
+import GetChip from './GetChip'
 
 function Project({ project }) {
-    const {id, name, date, preview, description, images} = project
+    const {id, name, date, preview, description, images, tags} = project
     return (
         <Card elevation={0} className="m-auto w-full my-8" sx={{maxWidth: 750, minWidth: 350}}>
-            <CardActionArea href={"/projects/".concat(id)}>
+            <CardActionArea href={"/projects/".concat(name.toLowerCase().split(" ").join("-"))}>
                 <CardMedia
                     sx={{
                         height: 450,
@@ -27,6 +28,7 @@ function Project({ project }) {
                     <Typography variant="body2" color="text.secondary">
                         {preview}
                     </Typography>
+                    {tags.map(tag => GetChip(tag))}
                 </CardContent>
             </CardActionArea>
         </Card>

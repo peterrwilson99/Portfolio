@@ -12,7 +12,8 @@ export const projects = [
             "https://github.com/MarcusDunn/day-trader/blob/main/readmeimages/4.png?raw=true"
         ],
         github: "https://github.com/MarcusDunn/day-trader",
-        website: null
+        website: null,
+        tags: ["Next.js", "MUI", "React", "JavaScript", "Docker"]
     },
     {
         id: "2",
@@ -27,7 +28,8 @@ export const projects = [
             "/images/migoy4.png"
         ],
         github: "https://github.com/peterrwilson99/miguel-next",
-        website: "https://miguelmanguerra.vercel.app/"
+        website: "https://miguelmanguerra.vercel.app/",
+        tags: ["Next.js", "MUI", "React", "JavaScript", "SendGrid"]
     },
     {
         id: "9",
@@ -39,7 +41,8 @@ export const projects = [
             "/images/scalable1.png",
         ],
         github: "https://github.com/peterrwilson99/SENG468ScalableBackend",
-        website: null
+        website: null,
+        tags: ["Express.js", "TypeScript", "Redis", "Nginx", "MongoDB"]
     },
     {
         id: "3",
@@ -53,7 +56,8 @@ export const projects = [
             "/images/quizzie3.png"
         ],
         github: "https://github.com/peterrwilson99/QuizApp",
-        website: "https://quizzie-uvic.vercel.app/"
+        website: "https://quizzie-uvic.vercel.app/",
+        tags: ["Next.js", "MUI", "React", "JavaScript"]
     },
     {
         id: "4",
@@ -65,7 +69,8 @@ export const projects = [
             "/images/wordle1.png"
         ],
         github: "https://github.com/peterrwilson99/WordleHelp",
-        website: null
+        website: null,
+        tags: ["Python"]
     },
     {
         id: "5",
@@ -77,7 +82,8 @@ export const projects = [
             "/images/sudoku1.png"
         ],
         github: null,
-        website: "https://pitasudoku.web.app/"
+        website: "https://pitasudoku.web.app/",
+        tags: ["React", "Firebase", "JavaScript"]
     },
     {
         id: "6",
@@ -90,7 +96,8 @@ export const projects = [
             "/images/clock2.png"
         ],
         github: null,
-        website: "https://prettyclock.vercel.app/"
+        website: "https://prettyclock.vercel.app/",
+        tags: ["Next.js", "MUI", "React", "JavaScript"]
     },
     {
         id: "7",
@@ -103,7 +110,8 @@ export const projects = [
             "/images/idf2.png"
         ],
         github: "https://gitlab.com/energyincities/idf_updater",
-        website: "https://idf-updater.readthedocs.io/en/latest/"
+        website: "https://idf-updater.readthedocs.io/en/latest/",
+        tags: ["Python", "EnergyPlus", "PyPi", "ReadTheDocs"]
     },
     {
         id: "8",
@@ -117,6 +125,7 @@ export const projects = [
             "/images/uvic3.png"
         ],
         github: "https://gitlab.com/peterrwilson99/uvic-timeline-creator",
-        website: "https://uvic-timeline-creator.readthedocs.io/en/latest/"
+        website: "https://uvic-timeline-creator.readthedocs.io/en/latest/",
+        tags: ["Python", "Pandas", "PyPi", "ReadTheDocs"]
     },
 ]
