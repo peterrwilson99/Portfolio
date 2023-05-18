@@ -28,13 +28,11 @@ function Hero() {
                 />
             </Typography>
             <Typography
-                variant="body1"
+                variant="h5"
                 component="p"
                 sx={{maxWidth: 750}}
             >
-                Welcome to my corner of the web. I'm Peter Wilson, a Software Engineer with a passion
-                for all things development. Whether it's crafting stunning designs, writing efficient code, or bringing
-                ideas to life, I love diving into exciting projects.
+                Welcome to my corner of the web. I'm Peter Wilson, a Software Engineer with a passion for development. 
             </Typography>
             <div className="mt-4">
                 <Button className="mr-2 my-2" href="#" color="secondary" variant="contained" onClick={() => window.open('/files/resume.pdf')}>

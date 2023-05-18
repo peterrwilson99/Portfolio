@@ -31,11 +31,11 @@ function Navigation() {
           </ButtonBase>
         </Box>
         <nav>
-            <ButtonBase href="/about" sx={{ my: 1, mx: 1.5 }}>
+            {/* <ButtonBase href="/about" sx={{ my: 1, mx: 1.5 }}>
                 <Typography className="font-medium" color='text'>
                   About
                 </Typography>
-            </ButtonBase>
+            </ButtonBase> */}
             <ButtonBase href="/projects" sx={{ my: 1, mx: 1.5 }}>
                 <Typography className="font-medium" color='text'>
                   Projects
