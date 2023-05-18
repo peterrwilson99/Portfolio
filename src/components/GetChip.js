@@ -86,6 +86,6 @@ export default function GetChip(TechName){
         icon = Chips[TechName].icon
     }
     return(
-        <Chip sx={{ paddingLeft: '5px' }} color="secondary" className="mt-2 mr-2" icon={icon} label={TechName} />
+        <Chip sx={{ paddingLeft: '5px' }}  className="mt-2 mr-2" icon={icon} label={TechName} />
     )
 }

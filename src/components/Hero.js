@@ -10,7 +10,7 @@ function Hero() {
                 variant="h2"
                 component="h1"
             >
-                Hi 👋 I'm Peter Wilson
+                Hi 👋 I'm Peter!
             </Typography>
             <Typography
                 variant="h3"
