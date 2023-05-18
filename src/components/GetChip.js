@@ -79,16 +79,13 @@ const Chips = {
 }
 
 export default function GetChip(TechName){
-    const theme = useTheme();
     let color = null
     let icon = null
     if(Chips[TechName]){
         color = Chips[TechName].color
         icon = Chips[TechName].icon
-    }else{
-        console.log("Undefined on ", TechName)
     }
     return(
-        <Chip sx={{paddingLeft: '5px' }} color="secondary" className="mt-2 mr-2" icon={icon} label={TechName} />
+        <Chip sx={{ paddingLeft: '5px' }} color="secondary" className="mt-2 mr-2" icon={icon} label={TechName} />
     )
 }

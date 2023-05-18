@@ -18,21 +18,25 @@ function Project({ project }) {
                     image={images[0]}
                     title={name}
                 />
-                <CardContent>
-                    <Typography variant="h5">
-                        {name}
-                    </Typography>
-                    <Typography variant="subtitle2" gutterBottom>
-                        {date}
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary" flexGrow>
-                        {preview}
-                    </Typography>
-                    {tags.map(tag => GetChip(tag))}
+                <CardContent sx={{display: 'flex', flexDirection: 'column', minHeight: '175px'}}>
+                    <Box sx={{flexGrow: 1}}>
+                        <Typography variant="h5">
+                            {name}
+                        </Typography>
+                        <Typography variant="subtitle2" gutterBottom>
+                            {date}
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary">
+                            {preview}
+                        </Typography>
+                    </Box>
+                    <Box>
+                        {tags.map(tag => GetChip(tag))}
+                    </Box>
                 </CardContent>
             </CardActionArea>
         </Card>
     )
 }
 
-export default Project
+export default Project;

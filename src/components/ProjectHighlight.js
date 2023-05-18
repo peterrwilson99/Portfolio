@@ -11,7 +11,7 @@ function ProjectHighlight({ projects, viewAll }) {
     return (
         <Box className={`${OneCol ? 'w-[90%]' : 'w-3/4'} m-auto`}>
             <div className={OneCol ? 'm-auto' : TwoCol ? `grid grid-cols-2 gap-4`: `grid grid-cols-3 gap-4`}>
-                {projects.map((project) => (<Project className="m-auto" project={project} />))}
+                {projects.map((project, index) => (<Project className="m-auto" key={index} project={project} />))}
             </div>
             {viewAll ? 
                 <div className='text-right my-4'>

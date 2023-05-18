@@ -46,7 +46,7 @@ export const projects = [
     },
     {
         id: "3",
-        name: "Quizzie - A Quiz App for Midterm Preparation",
+        name: "Quizzie",
         date: "February 2023",
         preview: "A quiz app for UVIC courses lacking practice midterms, using AI tooling to generate realistic questions from notes.",
         description: "Quizzie is a quiz application developed to provide students with practice materials for midterms that lacked official practice exams. Built using NextJS, React, and MaterialUI components, Quizzie offers an intuitive interface for students to test their knowledge. \n\nUsing markdown notes and ChatGPT, we generated quizzes in a specific JSON format that could be directly imported into the React Quiz component. Originally designed for a single midterm, the app evolved to accommodate multiple classes and tests, attracting a community of students seeking comprehensive test preparation. \n\nWith NextJS, React, and MaterialUI, Quizzie delivers a visually appealing and user-friendly experience. Its intelligent quiz generation system, powered by ChatGPT, ensures a wide range of questions to cover the course material effectively.",
