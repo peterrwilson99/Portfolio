@@ -11,7 +11,7 @@ function index() {
                     Projects ✔
                 </Typography>
                 <Typography component="h5" variant="h5" align="center" gutterBottom>
-                    Take a glimpse into my coding endeavors as we explore a collection of passion projects.
+                    Take a glimpse into some of my personal and professional projects from over the years.
                 </Typography>
             </div>
             <ProjectHighlight projects={projects} />
