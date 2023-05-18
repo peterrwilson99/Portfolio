@@ -79,12 +79,8 @@ const Chips = {
 }
 
 export default function GetChip(TechName){
-    let color = null
-    let icon = null
-    if(Chips[TechName]){
-        color = Chips[TechName].color
-        icon = Chips[TechName].icon
-    }
+    let icon = Chips[TechName] ? Chips[TechName].icon : null
+    
     return(
         <Chip sx={{ paddingLeft: '5px' }}  className="mt-2 mr-2" icon={icon} label={TechName} />
     )
