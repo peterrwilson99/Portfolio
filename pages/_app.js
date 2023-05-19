@@ -9,6 +9,7 @@ import {lightTheme, darkTheme } from '../src/theme'
 import '../src/globals.css'
 import createEmotionCache from '../src/createEmotionCache';
 import Navigation from '../src/components/Navigation';
+import { Analytics } from '@vercel/analytics/react';
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
@@ -40,6 +41,7 @@ export default function MyApp(props) {
           <Footer />
         </ThemeProvider>
       </CacheProvider>
+      <Analytics />
     </ThemeContext.Provider>
   );
 }
