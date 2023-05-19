@@ -15,6 +15,10 @@ function ProjectView({ project }) {
         {paragraph}
       </Typography>
     ));
+  // choose 3 random projects to suggest
+  const suggestedProjects = projects.filter((project) => project.name !== name).sort(() => 0.5 - Math.random()).slice(0, 3);
+  console.log(suggestedProjects);
+
   return (
     <main className="pt-12">
       <Container maxWidth="md">
