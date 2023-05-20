@@ -116,7 +116,7 @@ export const projects = [
     {
         id: "8",
         name: "UVIC Term Timeline Creator",
-        date: "November 2021",
+        date: "November 2020",
         preview: "A python application to help students plan what terms to schedule courses in based on offering dates and course weights.",
         description: "A python application to help students plan what terms to schedule courses in based on offering dates and course weights.",
         images: [

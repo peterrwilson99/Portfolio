@@ -1,6 +1,7 @@
 import { Box, Typography } from '@mui/material'
 import React from 'react'
 import CareerTimeline from '../src/components/CareerTimeline'
+import About from '../src/components/About'
 
 function about() {
   return (
@@ -12,6 +13,7 @@ function about() {
             <Typography variant="h6" color="text.secondary" gutterBottom>
                 This page is still in development, however, if you would like to hear more feel free to contact me 😁
             </Typography>
+            {/* <About /> */}
             <CareerTimeline />
         </Box>
     </main>
