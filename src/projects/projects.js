@@ -77,12 +77,12 @@ export const projects = [
         name: "Sudoku",
         date: "September 2021",
         preview: "A simple sudoku application built using create-react-app and basic React components.",
-        description: "A simple sudoku application built using create-react-app and basic React components.",
+        description: "A simple sudoku application built using create-react-app and basic React components. Was originally deployed with Firebase and has now been migrated to Vercel for hosting to keep all the projects in one place.",
         images: [
             "/images/sudoku1.png"
         ],
         github: null,
-        website: "https://pitasudoku.web.app/",
+        website: "https://pitasudoku.vercel.app/",
         tags: ["React", "Firebase", "JavaScript"]
     },
     {
@@ -129,3 +129,43 @@ export const projects = [
         tags: ["Python", "Pandas", "PyPi", "ReadTheDocs"]
     },
 ]
+
+export function getSimilarProjects(projectToCompare){
+    let projectsCopy = [...projects]
+    // remove projectToCompare from projectsCopy
+    projectsCopy = projectsCopy.filter((project) => project.name !== projectToCompare.name)
+    
+    let similarProjects = []
+    for(const project of projectsCopy){
+        let similarTags = 0
+        for(const tag of projectToCompare.tags){
+            if(project.tags.includes(tag)){
+                similarTags++
+            }
+        }
+        project.similarTags = similarTags
+        if(similarTags > 0){
+            similarProjects.push(project)
+        }
+    }
+    
+    // sort similarProjects by similarTags at the top
+    similarProjects.sort((a, b) => (a.similarTags < b.similarTags) ? 1 : -1)
+    
+    // if similarProjects.length > 3, return the first 3
+    if(similarProjects.length > 3){
+        console.log("SimilarProjects.length", similarProjects.length)
+        return similarProjects.slice(0, 3)
+    }
+
+    // remove all similarProjects from projectsCopy
+    projectsCopy = projectsCopy.filter((project) => project.name !== similarProjects.name)
+
+    // select random projects from projectsCopy to fill the rest of the array
+    const randomProjects = selectRandomElements(projectsCopy, 3 - similarProjects.length)
+    return [...similarProjects, ...randomProjects]
+}
+
+function selectRandomElements(array, n) {
+    return array.sort(() => 0.5 - Math.random()).slice(0, n);
+}
