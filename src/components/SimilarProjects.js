@@ -10,7 +10,7 @@ function SimilarProjects({ projects }) {
             </Typography>
             <div className="flex flex-row flex-wrap justify-start">
                 {projects.map((project, index) => {
-                    return (<Card elevation={0} className="m-4" sx={{maxWidth: 350, minWidth: 150}}>
+                    return (<Card elevation={0} key={index} className="m-4" sx={{maxWidth: 350, minWidth: 150}}>
                         <CardActionArea href={"/projects/".concat(project.name.toLowerCase().split(" ").join("-"))}>
                             <CardMedia
                                 sx={{
