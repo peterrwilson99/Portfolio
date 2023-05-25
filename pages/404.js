@@ -1,10 +1,14 @@
 import React from 'react'
 import { Box, Typography, Button } from '@mui/material'
 import Link from 'next/link'
+import Head from 'next/head'
 
 function NotFound() {
   return (
     <main>
+      <Head>
+        <title>404 - Peter Wilson</title>
+      </Head>
       <Box
         sx={{
           display: 'flex',

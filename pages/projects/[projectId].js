@@ -5,6 +5,7 @@ import { getSimilarProjects, projects } from "../../src/projects/projects";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LanguageIcon from "@mui/icons-material/Language";
 import SimilarProjects from "../../src/components/SimilarProjects";
+import Head from "next/head";
 
 function ProjectView({ project, similarProjects }) {
   const { id, name, date, preview, description, images, website, github, tags } =
@@ -21,6 +22,9 @@ function ProjectView({ project, similarProjects }) {
 
   return (
     <main className="pt-12">
+      <Head>
+        <title>{name} - Peter Wilson</title>
+      </Head>
       <Container maxWidth="md">
         <ImageGallery images={images} className="my-4" />
         <Typography variant="h3" component="h2">
