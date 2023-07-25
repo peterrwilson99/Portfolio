@@ -33,7 +33,7 @@ function ProjectHighlight({ projects, showAll }) {
 
             <Collapse in={open} timeout="auto" unmountOnExit>
                 <div className={OneCol ? 'm-auto' : TwoCol ? `grid grid-cols-2 gap-4`: `grid grid-cols-3 gap-4`}>
-                    {projects.slice(3).map((project, index) => (<Project className="m-auto" key={index+3} project={project} />))}
+                    {projects.slice(numProjects).map((project, index) => (<Project className="m-auto" key={index+3} project={project} />))}
                 </div>
             </Collapse>
             <div className="text-right">
