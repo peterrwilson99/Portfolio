@@ -1,11 +1,13 @@
-import { Button, Container, Typography } from "@mui/material";
+import { Button, Container, Divider, Typography } from "@mui/material";
 import React from "react";
 import ImageGallery from "../../src/components/ImageGallery";
-import { projects } from "../../src/projects/projects";
+import { getSimilarProjects, projects } from "../../src/projects/projects";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LanguageIcon from "@mui/icons-material/Language";
+import SimilarProjects from "../../src/components/SimilarProjects";
+import Head from "next/head";
 
-function ProjectView({ project }) {
+function ProjectView({ project, similarProjects }) {
   const { id, name, date, preview, description, images, website, github, tags } =
     project;
   const formattedDescription = description
@@ -15,8 +17,14 @@ function ProjectView({ project }) {
         {paragraph}
       </Typography>
     ));
+  // choose 3 random projects to suggest
+  console.log(similarProjects);
+
   return (
     <main className="pt-12">
+      <Head>
+        <title>{name} - Peter Wilson</title>
+      </Head>
       <Container maxWidth="md">
         <ImageGallery images={images} className="my-4" />
         <Typography variant="h3" component="h2">
@@ -54,6 +62,10 @@ function ProjectView({ project }) {
         </div>
         {formattedDescription}
       </Container>
+      <Container maxWidth="lg">
+        <Divider className="mt-24"/>
+        <SimilarProjects projects={similarProjects} />
+      </Container>
     </main>
   );
 }
@@ -81,6 +93,7 @@ export async function getStaticProps({ params }) {
   const project = projects.find(
     (project) => project.name.toLowerCase() === projectName
   );
+  const similarProjects = getSimilarProjects(project);
 
   if (!project) {
     return {
@@ -88,7 +101,7 @@ export async function getStaticProps({ params }) {
     };
   }
 
-  return { props: { project } };
+  return { props: { project, similarProjects } };
 }
 
 export default ProjectView;
