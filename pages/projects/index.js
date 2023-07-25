@@ -14,7 +14,7 @@ function index() {
                     Take a glimpse into some of my personal and professional projects from over the years.
                 </Typography>
             </div>
-            <ProjectHighlight projects={projects} />
+            <ProjectHighlight projects={projects} showAll={true} />
         </main>
     )
 }

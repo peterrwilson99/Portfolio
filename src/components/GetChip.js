@@ -14,6 +14,9 @@ import IconFirebase from "./icons/IconFirebase"
 import IconPypi from "./icons/IconPypi"
 import IconReadthedocs from "./icons/IconReadthedocs"
 import IconPandas from "./icons/IconPandas"
+import IconScikitlearn from "./icons/IconScikitlearn"
+import IconNumpy from "./icons/IconNumpy"
+import IconSelenium from "./icons/IconSelenium"
 
 const Chips = {
     'Next.js': {
@@ -76,6 +79,18 @@ const Chips = {
         color: "",
         icon: <IconPandas />,
     },
+    'Scikit-Learn': {
+        color: "",
+        icon: <IconScikitlearn />,
+    },
+    'NumPy': {
+        color: "",
+        icon: <IconNumpy />,
+    },
+    'Selenium': {
+        color: "",
+        icon: <IconSelenium />,
+    }
 }
 
 export default function GetChip(TechName){

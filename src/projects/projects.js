@@ -16,6 +16,63 @@ export const projects = [
         tags: ["Next.js", "MUI", "React", "JavaScript", "Docker"]
     },
     {
+        id: "10",
+        name: "Wordle Clone",
+        date: "July 2023",
+        preview: "A Wordle clone built using NextJS, MaterialUI, and Vercel.",
+        description: "This project is a recreation of the popular word puzzle game, Wordle. It was built using React.js and Material-UI, aiming to capture the essence of the original game while demonstrating the ability to follow strict design specifications.\n\n        The recreated Wordle game is designed to work across a variety of devices. It maintains its look and feel whether played on a desktop, tablet, or mobile device. A focus on responsive design ensures that the game adapts to different screen sizes, making it enjoyable for players regardless of their chosen platform.\n\n        \n\n        In addition to device compatibility, this recreation of Wordle includes both light and dark modes. These features were added to accommodate the visual preferences of different users, providing them with a comfortable viewing experience no matter their setting or time of day.\n\n        \n\nThis project is a practical demonstration of faithfully replicating a game, while incorporating elements of modern web design, such as responsiveness and theme versatility. It showcases a careful and precise approach to building a game that captures the original Wordle experience and makes it accessible to anyone, anywhere.",
+        images: [
+            "/images/wordleclone1.png",
+            "/images/wordleclone2.png",
+            "/images/wordleclone3.png",
+            "/images/wordleclone4.png"
+        ],
+        github: "https://github.com/peterrwilson99/WordleClone",
+        website: "https://peterswordle.vercel.app/",
+        tags: ["Next.js", "MUI", "React", "JavaScript"]
+    },
+    {
+        id: "9",
+        name: "Scalable Social Media Backend",
+        date: "March 2023",
+        preview: "A scalable social media application using Express.js, Nginx, Redis, and MongoDB",
+        description: "This application was part of the SENG 468 Spring offering, where the goal was to design a scalable and fault-tolerant social media platform that enables users to create and share posts. The platform needed to handle a large number of concurrent users and support real-time notifications and messaging. To achieve this, a combination of MongoDB, Redis, Nginx Load Balancer, and redis queuing were utilized. The solution included components such as a MongoDB database for storing user, post, comment, and notification information, a Redis cache for improving performance, an Nginx Load Balancer for distributing requests and enhancing availability, and a messaging system using Redis for real-time notifications and user messaging. The project was containerized using Docker, with a provided Docker Compose file for easy setup and deployment. Additionally, scripts were developed to populate the database with sample data for testing, and perform basic CRUD operations on the database.",
+        images: [
+            "/images/scalable1.png",
+        ],
+        github: "https://github.com/peterrwilson99/SENG468ScalableBackend",
+        website: null,
+        tags: ["Express.js", "TypeScript", "Redis", "Nginx", "MongoDB"]
+    },
+    {
+        id: "11",
+        name: "NBA Hall of Fame Predictor",
+        date: "July 2023",
+        preview: "A predictive model built using Python and various data science libraries to predict NBA Hall of Fame inductions.",
+        description: "The aim of this project is to employ supervised machine learning techniques to predict future inductions into the National Basketball Association (NBA) Hall of Fame based on the statistical performance and career achievements of NBA players. Python is utilized as the primary programming language due to its ease of use and extensive support for scientific computing tasks. Key libraries used include Pandas for data handling and manipulation, NumPy for numerical computations, Matplotlib and Seaborn for data visualization, and Scikit-learn for implementing machine learning models and processing pipelines.\n\nThe process begins with cleaning and processing the data, which include player statistics for each season played from 1950-2022, All-Star data, Hall of Fame statistics, and Finals and Season MVP statistics. A variety of machine learning algorithms are then tested on the data to identify the most accurate predictor for Hall of Fame induction. The best-performing model is fine-tuned to maximize its predictive performance.\n\nThe objective of the project is not just to construct a predictive model, but to gain insight into the factors that contribute most significantly to a player's likelihood of being inducted into the Hall of Fame. With this knowledge, teams could potentially identify future Hall of Fame players early in their careers, assisting in drafting and recruitment decisions.",
+        images: [
+            "/images/nbahofpredictor1.png",
+            "/images/nbahofpredictor2.png",
+            "/images/nbahofpredictor3.png",
+            "/images/nbahofpredictor4.png"
+        ],
+        github: "https://github.com/peterrwilson99/nba-hof-predictor",
+        website: "https://github.com/peterrwilson99/nba-hof-predictor/blob/main/report.ipynb",
+        tags: ["Python", "Pandas", "NumPy", "Matplotlib" , "Scikit-Learn"]
+    },
+    {
+        id: "12",
+        name: "Apple Music to Spotify Playlist Converter",
+        date: "July 2023",
+        preview: "A Python project to transfer playlists from Apple Music to Spotify, using Selenium for web scraping and Spotipy to interact with Spotify's Web API.",
+        description: "This Python project fetches a list of songs from an Apple Music playlist and updates a Spotify playlist with the same set of songs. It employs Selenium for web scraping to fetch song details from Apple Music, and Spotipy, a lightweight Python library, to interact with Spotify's Web API and update the Spotify playlist.\n\nThe project structure consists of three key Python scripts. 'main.py' serves as the driver script for executing the main functions. 'apple.py' includes the function to scrape songs from an Apple Music playlist. 'spotify.py' contains functions to interact with Spotify's Web API to fetch song IDs and update a Spotify playlist.\n\nAn essential part of the project is the .env file, storing necessary environment variables. Although not included in the repository due to security reasons, a setup script, 'generator.py', is provided to assist the user in creating this file.\n\nTo run the program, the user needs to execute the 'main.py' script. The program will then fetch the song list from the Apple Music playlist and convert the song names and artist names into track IDs using the Spotify Web API. The provided Spotify playlist is updated with these track IDs.\n\nPlease note that due to song availability and naming differences between Apple Music and Spotify, some songs might not get transferred.",
+        images: [
+            "/images/appletospotify.png"
+        ],
+        github: "https://github.com/peterrwilson99/AppleToSpotify",
+        tags: ["Python", "Selenium"]
+    },
+    {
         id: "2",
         name: "Miguel Manguerra's Portfolio",
         date: "August 2022",
@@ -32,19 +89,6 @@ export const projects = [
         tags: ["Next.js", "MUI", "React", "JavaScript", "SendGrid"]
     },
     {
-        id: "9",
-        name: "Scalable Social Media Backend",
-        date: "March 2023",
-        preview: "A scalable social media application using Express.js, Nginx, Redis, and MongoDB",
-        description: "This application was part of the SENG 468 Spring offering, where the goal was to design a scalable and fault-tolerant social media platform that enables users to create and share posts. The platform needed to handle a large number of concurrent users and support real-time notifications and messaging. To achieve this, a combination of MongoDB, Redis, Nginx Load Balancer, and redis queuing were utilized. The solution included components such as a MongoDB database for storing user, post, comment, and notification information, a Redis cache for improving performance, an Nginx Load Balancer for distributing requests and enhancing availability, and a messaging system using Redis for real-time notifications and user messaging. The project was containerized using Docker, with a provided Docker Compose file for easy setup and deployment. Additionally, scripts were developed to populate the database with sample data for testing, and perform basic CRUD operations on the database.",
-        images: [
-            "/images/scalable1.png",
-        ],
-        github: "https://github.com/peterrwilson99/SENG468ScalableBackend",
-        website: null,
-        tags: ["Express.js", "TypeScript", "Redis", "Nginx", "MongoDB"]
-    },
-    {
         id: "3",
         name: "Quizzie",
         date: "February 2023",
@@ -58,32 +102,6 @@ export const projects = [
         github: "https://github.com/peterrwilson99/QuizApp",
         website: "https://quizzie-uvic.vercel.app/",
         tags: ["Next.js", "MUI", "React", "JavaScript"]
-    },
-    {
-        id: "4",
-        name: "Wordle Solver",
-        date: "November 2022",
-        preview: "A python application to solve Wordles using a large word list and a word frequency list.",
-        description: "This Python application serves as a handy Wordle helper, providing options and suggestions for the popular word-guessing game. By employing various methods and functionalities, such as removing letters, checking the existence of specific letters at certain indices, and generating top guess words, the application assists users in narrowing down the potential solutions.\n\nAs this was a simple quick project for myself there is currently no user interface, and future work could include creating a Flask server to where a frontend application could query this tool.",
-        images: [
-            "/images/wordle1.png"
-        ],
-        github: "https://github.com/peterrwilson99/WordleHelp",
-        website: null,
-        tags: ["Python"]
-    },
-    {
-        id: "5",
-        name: "Sudoku",
-        date: "September 2021",
-        preview: "A simple sudoku application built using create-react-app and basic React components.",
-        description: "A simple sudoku application built using create-react-app and basic React components.",
-        images: [
-            "/images/sudoku1.png"
-        ],
-        github: null,
-        website: "https://pitasudoku.web.app/",
-        tags: ["React", "Firebase", "JavaScript"]
     },
     {
         id: "6",
