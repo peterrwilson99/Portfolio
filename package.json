@@ -19,11 +19,13 @@
     "@mui/material": "^5.13.1",
     "@sendgrid/mail": "^7.7.0",
     "@vercel/analytics": "^1.0.1",
+    "framer-motion": "^10.13.1",
     "next": "latest",
     "prop-types": "latest",
     "react": "latest",
     "react-dom": "latest",
     "react-material-ui-carousel": "^3.4.2",
+    "react-visibility-sensor": "^5.1.1",
     "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {

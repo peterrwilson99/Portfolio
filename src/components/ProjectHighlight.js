@@ -1,10 +1,11 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Box, Button, useMediaQuery, useTheme, Collapse, Tooltip } from '@mui/material'
 import Project from './Project'
-import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import IconButton from '@mui/material/IconButton';
+import VisibilitySensor from 'react-visibility-sensor';
+
 
 function ProjectHighlight({ projects, showAll }) {
     const theme = useTheme();
@@ -12,9 +13,28 @@ function ProjectHighlight({ projects, showAll }) {
     const OneCol = useMediaQuery(theme.breakpoints.down(1200));
     const numProjects = OneCol ? 1 : TwoCol ? 2 : 3 
     const [open, setOpen] = useState(false);
+    const [firstRender, setFirstRender] = useState(false);
+    const [isVisible, setIsVisible] = useState(false);
 
     const handleExpandClick = () => {
         setOpen(!open);
+        if (firstRender) setFirstRender(false);
+    };
+
+    useEffect(() => {
+        if (isVisible) {
+            setFirstRender(true);
+            const timeoutId = setTimeout(() => {
+                setFirstRender(false);
+            }, 3000);
+
+            // Clear the timeout when the component unmounts
+            return () => clearTimeout(timeoutId);
+        }
+    }, [isVisible])
+
+    const onVisibilityChange = (isVisible) => {
+        setIsVisible(isVisible);
     };
 
     return (
@@ -37,15 +57,17 @@ function ProjectHighlight({ projects, showAll }) {
                 </div>
             </Collapse>
             <div className="text-right">
-                <Tooltip title={open ? "See Less" : "See More"}>
-                    <IconButton
-                        onClick={handleExpandClick}
-                        aria-expanded={open}
-                        aria-label="show more"
-                    >
-                        {open ? <ExpandLessIcon /> : <ExpandMoreIcon />}
-                    </IconButton>
-                </Tooltip>
+                <VisibilitySensor onChange={onVisibilityChange}>
+                    <Tooltip title={open ? "See Less" : "See More"} open={firstRender}>
+                        <IconButton
+                            onClick={handleExpandClick}
+                            aria-expanded={open}
+                            aria-label="show more"
+                        >
+                            {open ? <ExpandLessIcon /> : <ExpandMoreIcon />}
+                        </IconButton>
+                    </Tooltip>
+                </VisibilitySensor>
             </div>
         </Box>
     )
