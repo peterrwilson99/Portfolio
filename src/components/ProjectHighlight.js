@@ -58,7 +58,7 @@ function ProjectHighlight({ projects, showAll }) {
             </Collapse>
             <div className="text-right">
                 <VisibilitySensor onChange={onVisibilityChange}>
-                    <Tooltip title={open ? "See Less" : "See More"} open={firstRender}>
+                    <Tooltip title={open ? "See Less Projects" : "See More Projects"} open={firstRender}>
                         <IconButton
                             onClick={handleExpandClick}
                             aria-expanded={open}

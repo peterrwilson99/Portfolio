@@ -17,7 +17,7 @@ export default function Index() {
   return (
     <main>
       <Hero />
-      {/* <About /> */}
+      <About />
       <ProjectHighlight projects={projects}/>
       {/* <Container maxWidth="md">
         <ContactForm />

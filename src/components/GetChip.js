@@ -18,7 +18,7 @@ import IconScikitlearn from "./icons/IconScikitlearn"
 import IconNumpy from "./icons/IconNumpy"
 import IconSelenium from "./icons/IconSelenium"
 
-const Chips = {
+export const IconDictionary = {
     'Next.js': {
         color: "white",
         icon: <IconNextjs />,
@@ -93,8 +93,14 @@ const Chips = {
     }
 }
 
+
+export const Icons = Object.keys(IconDictionary).map((key) => ({
+    "name": key,
+    "icon": IconDictionary[key].icon,
+}));
+
 export default function GetChip(TechName){
-    let icon = Chips[TechName] ? Chips[TechName].icon : null
+    let icon = IconDictionary[TechName] ? IconDictionary[TechName].icon : null
     
     return(
         <Chip sx={{ paddingLeft: '5px' }}  className="mt-2 mr-2" icon={icon} label={TechName} />
