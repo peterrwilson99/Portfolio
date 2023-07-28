@@ -68,7 +68,7 @@ export default function About() {
                       {isSmallScreen ? <></>
                         :
                         <Box className={isSmallScreen ? "text-center m-auto": "flex justify-end align-middle items-center"}>
-                            <Avatar sx={{width: isSmallScreen ? "300px" : "400px", height: isSmallScreen ? "300px" : "400px"}} src="/TempHeadshot.png"/>
+                            <Avatar className="m-auto text-center" sx={{width: isSmallScreen ? "300px" : "400px", height: isSmallScreen ? "300px" : "400px"}} src="/TempHeadshot.png"/>
                         </Box>
                       }
                     </Container>
@@ -98,11 +98,11 @@ export default function About() {
                             <Box className="flex md:justify-end align-middle items-center">
                                 <AboutCarousel />
                             </Box>
-                            <Box className="py-6 flex flex-col justify-center ">
+                            <Box className="py-6 flex flex-col justify-center">
                                 <Typography variant="h2" gutterBottom sx={{mt: 2}}>
                                     Beyond the Office
                                 </Typography>
-                                <Typography variant="body1" className="text-xl" color="text.secondary" paragraph>
+                                <Typography variant="body1" className="text-xl" color="text.secondary" paragraph >
                                     Beyond the world of code, there's a lot more to me. I love powerlifting, going snowboarding, and playing basketball. I have been riding motorcycles since I was 6 years old, and nowadays I ride trials and sport bikes. I also enjoy wrenching on cars, and I'm currently working on a 2002 BMW 330i. I love walking my puppy, a 5-month-old Chocolate Labrador.
                                 </Typography>
                             </Box>

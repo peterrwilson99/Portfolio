@@ -42,7 +42,6 @@ const IconGallery = () => {
                 return (
                 <Box key={index} className="text-center">
                     <Tooltip title={item.name}>
-                        {/* remove hover from iconbutton */}
                         <ButtonBase  >
                             {ItemComponent}
                         </ButtonBase>
