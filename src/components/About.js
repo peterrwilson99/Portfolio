@@ -1,4 +1,4 @@
-import { Box, Button, Container, Typography, Avatar, styled, Collapse, Tooltip, IconButton, useTheme, useMediaQuery } from '@mui/material';
+import { Box, Button, Container, Typography, Avatar, styled, Collapse, Tooltip, IconButton, useTheme, useMediaQuery, Grid } from '@mui/material';
 import IconGallery from './IconGallery';
 import SlideIn from './SlideIn';
 import AboutCarousel from './AboutCarousel';
@@ -7,14 +7,15 @@ import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import VisibilitySensor from 'react-visibility-sensor';
 import { useEffect, useState } from 'react';
 
-
 export default function About() {
     const theme = useTheme();
+    const matches = useMediaQuery(theme.breakpoints.down('sm'));
+
+    const avatarSize = matches ? "200px" : "400px";
+    const typographyVariant = matches ? "h4" : "h2";
     const [open, setOpen] = useState(false);
     const [firstRender, setFirstRender] = useState(false);
     const [isVisible, setIsVisible] = useState(false);
-
-    const isSmallScreen = useMediaQuery(theme.breakpoints.down('md'));
 
     const handleExpandClick = () => {
         setOpen(!open);
@@ -54,32 +55,39 @@ export default function About() {
     return (
         <Container maxWidth="xl" className="mb-12">
             <SlideIn>
-                <AboutMeSection>
-                    <Container maxWidth="lg" className={isSmallScreen ? "m-auto justify-center text-center" : "grid grid-cols-2 gap-5 m-auto justify-center"}>
-                      <Box className="py-6 flex flex-col justify-center">
-                        <Typography variant="h2" gutterBottom sx={{mt: 2}}>
-                            About Me
-                        </Typography>
-                        {isSmallScreen ? <Avatar sx={{width: isSmallScreen ? "300px" : "400px", height: isSmallScreen ? "300px" : "400px"}} src="/TempHeadshot.png" className="mb-8" /> : null}
-                        <Typography variant="body1" className="text-xl" color="text.secondary" paragraph>
+                <Grid container>
+                    <Grid item xs={12} sm={6} className="py-6 flex flex-col justify-center">
+                        <div className="flex justify-center gap-5 items-center mb-4">
+                            {matches ?
+                                <Avatar sx={{width: 80, height: 80}} src="/TempHeadshot.png"/>
+                                :
+                                <></>
+                            }
+                            <Typography variant={typographyVariant} gutterBottom sx={{mt: 2}} textAlign={matches ? "center" : "left"}>
+                                About Me
+                            </Typography>
+                        </div>
+                        <Typography variant="body1" className="text-xl" color="text.secondary" textAlign={matches ? "center" : "left"} paragraph>
                             Hello! I'm Peter Wilson, a Full-Stack Software Engineer based in beautiful Victoria, British Columbia. From a young age, I've been captivated by the transformative power of technology and programming, which led me to pursue a career in software development. I am a soon-to-be graduate of the University of Victoria's Software Engineering program.
                         </Typography>
-                      </Box>
-                      {isSmallScreen ? <></>
+                    </Grid>
+                    {matches ?
+                        <></>
                         :
-                        <Box className={isSmallScreen ? "text-center m-auto": "flex justify-end align-middle items-center"}>
-                            <Avatar className="m-auto text-center" sx={{width: isSmallScreen ? "300px" : "400px", height: isSmallScreen ? "300px" : "400px"}} src="/TempHeadshot.png"/>
-                        </Box>
-                      }
-                    </Container>
-                </AboutMeSection>
+                        <Grid item xs={12} sm={6} className="flex justify-end align-middle items-center">
+                            <Box display="flex" justifyContent="center">
+                                <Avatar sx={{width: avatarSize, height: avatarSize}} src="/TempHeadshot.png"/>
+                            </Box>
+                        </Grid>
+                    }
+                </Grid>
             </SlideIn>
             <Collapse in={open} timeout="auto" unmountOnExit>            
                 <SlideIn>
                     <AboutMeSection>
                         <Box>
                             <Container maxWidth="md" className="m-auto text-center">
-                                <Typography variant="h2" gutterBottom sx={{mt: 2}}>
+                                <Typography variant={typographyVariant} gutterBottom sx={{mt: 2}}>
                                     My Skills
                                 </Typography>
                                 <Typography variant="body1" className="text-xl text-center" color="text.secondary" paragraph>
@@ -94,18 +102,20 @@ export default function About() {
                 </SlideIn>
                 <SlideIn>
                     <AboutMeSection>
-                        <Container maxWidth="lg" className={isSmallScreen ? "flex flex-col-reverse text-center" : "grid grid-cols-2 gap-5 m-auto justify-center text-right"}>
-                            <Box className="flex md:justify-end align-middle items-center">
-                                <AboutCarousel />
-                            </Box>
-                            <Box className="py-6 flex flex-col justify-center">
-                                <Typography variant="h2" gutterBottom sx={{mt: 2}}>
-                                    Beyond the Office
-                                </Typography>
-                                <Typography variant="body1" className="text-xl" color="text.secondary" paragraph >
-                                    Beyond the world of code, there's a lot more to me. I love powerlifting, going snowboarding, and playing basketball. I have been riding motorcycles since I was 6 years old, and nowadays I ride trials and sport bikes. I also enjoy wrenching on cars, and I'm currently working on a 2002 BMW 330i. I love walking my puppy, a 5-month-old Chocolate Labrador.
-                                </Typography>
-                            </Box>
+                        <Container maxWidth="lg" className="m-auto">
+                            <Grid container spacing={5} alignItems="center">
+                                <Grid item xs={12} md={6} order={{ xs: 2, md: 1 }} className="py-6 flex flex-col justify-center">
+                                    <Typography variant={typographyVariant} gutterBottom sx={{mt: 2}}>
+                                        Beyond the Office
+                                    </Typography>
+                                    <Typography variant="body1" className="text-xl" color="text.secondary" paragraph >
+                                        Beyond the world of code, there's a lot more to me. I love powerlifting, going snowboarding, and playing basketball. I have been riding motorcycles since I was 6 years old, and nowadays I ride trials and sport bikes. I also enjoy wrenching on cars, and I'm currently working on a 2002 BMW 330i. I love walking my puppy, a 5-month-old Chocolate Labrador.
+                                    </Typography>
+                                </Grid>
+                                <Grid item xs={12} md={6} order={{ xs: 1, md: 2 }}>
+                                    <AboutCarousel />
+                                </Grid>
+                            </Grid>
                         </Container>
                     </AboutMeSection>
                 </SlideIn>
