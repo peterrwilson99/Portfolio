@@ -23,7 +23,7 @@ function AboutCarousel() {
             
             >
                 {aboutImages.map((image, index) => (
-                    <Box key={index} className="m-auto" sx={{height: '450px', width: '450px', backgroundImage: `url('${image}')`, backgroundPosition: 'center', backgroundSize: 'cover', borderRadius: 4}}>
+                    <Box key={index} className="m-auto" sx={{height: '450px', width: '450px', backgroundImage: `url('${image}')`, backgroundPosition: 'right', backgroundSize: 'cover', borderRadius: 4}}>
                     </Box>
                 ))}
             </Carousel>

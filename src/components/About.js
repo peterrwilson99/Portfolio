@@ -53,11 +53,11 @@ export default function About() {
     
     
     return (
-        <Container maxWidth="xl" className="mb-12">
+        <Container maxWidth="lg" className="mb-12">
             <SlideIn>
                 <Grid container>
                     <Grid item xs={12} sm={6} className="py-6 flex flex-col justify-center">
-                        <div className="flex justify-center gap-5 items-center mb-4">
+                        <div className={matches ? "flex justify-center gap-5 items-center mb-4" : ""}>
                             {matches ?
                                 <Avatar sx={{width: 80, height: 80}} src="/TempHeadshot.png"/>
                                 :
@@ -85,7 +85,7 @@ export default function About() {
             <Collapse in={open} timeout="auto" unmountOnExit>            
                 <SlideIn>
                     <AboutMeSection>
-                        <Box>
+                        <Box sx={{maxWidth: '100vw'}}>
                             <Container maxWidth="md" className="m-auto text-center">
                                 <Typography variant={typographyVariant} gutterBottom sx={{mt: 2}}>
                                     My Skills
@@ -104,7 +104,7 @@ export default function About() {
                     <AboutMeSection>
                         <Container maxWidth="lg" className="m-auto">
                             <Grid container spacing={5} alignItems="center">
-                                <Grid item xs={12} md={6} order={{ xs: 2, md: 1 }} className="py-6 flex flex-col justify-center">
+                                <Grid item xs={12} md={6}  className="py-6 flex flex-col justify-center">
                                     <Typography variant={typographyVariant} gutterBottom sx={{mt: 2}}>
                                         Beyond the Office
                                     </Typography>
@@ -112,7 +112,7 @@ export default function About() {
                                         Beyond the world of code, there's a lot more to me. I love powerlifting, going snowboarding, and playing basketball. I have been riding motorcycles since I was 6 years old, and nowadays I ride trials and sport bikes. I also enjoy wrenching on cars, and I'm currently working on a 2002 BMW 330i. I love walking my puppy, a 5-month-old Chocolate Labrador.
                                     </Typography>
                                 </Grid>
-                                <Grid item xs={12} md={6} order={{ xs: 1, md: 2 }}>
+                                <Grid item xs={12} md={6} >
                                     <AboutCarousel />
                                 </Grid>
                             </Grid>

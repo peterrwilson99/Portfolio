@@ -5,7 +5,7 @@ import Typewriter from 'typewriter-effect';
 function Hero() {
   return (
     <Container className="h-[75vh] mt-8 flex items-center justify-center" maxWidth="xl">
-        <div className="mr-4 text-center mb-8">
+        <div className="text-center mb-8">
             <Typography
                 variant="h2"
                 component="h1"

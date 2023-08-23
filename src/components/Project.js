@@ -36,7 +36,7 @@ function Project({ project }) {
                             </Typography>
                         </Box>
                         <Box>
-                            {tags.map(tag => GetChip(tag))}
+                            {tags.map((tag, index) => GetChip(tag, index))}
                         </Box>
                     </CardContent>
                 </CardActionArea>

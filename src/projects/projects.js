@@ -1,5 +1,19 @@
 export const projects = [
     {
+        id: "0",
+        name: "Individual Pursuits",
+        date: "April 2022",
+        preview: "A web application to track goals and progress for people with developmental disabilities.",
+        description: 'individual-pursuits',
+        images: [
+            "https://github.com/MarcusDunn/day-trader/blob/main/readmeimages/1.png?raw=true",
+        ],
+        github: null,
+        website: null,
+        tags: ["Next.js", "Express.js", "Auth0", "MUI", "React", "TypeScript", "Docker", "PostgreSQL", "Prisma", "SendGrid"],
+        jsx_description: true,
+    },
+    {
         id: "1",
         name: "Scalable Day Trading Application",
         date: "April 2023",

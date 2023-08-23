@@ -17,6 +17,9 @@ import IconPandas from "./icons/IconPandas"
 import IconScikitlearn from "./icons/IconScikitlearn"
 import IconNumpy from "./icons/IconNumpy"
 import IconSelenium from "./icons/IconSelenium"
+import IconAuth0 from "./icons/IconAuth0"
+import IconPrisma from "./icons/IconPrisma"
+import IconPostgresql from "./icons/IconPostgreSQL"
 
 export const IconDictionary = {
     'Next.js': {
@@ -90,7 +93,19 @@ export const IconDictionary = {
     'Selenium': {
         color: "",
         icon: <IconSelenium />,
-    }
+    },
+    'Auth0': {
+        color: "",
+        icon: <IconAuth0 />,
+    },
+    'Prisma': {
+        color: "",
+        icon: <IconPrisma />,
+    },
+    'PostgreSQL': {
+        color: "",
+        icon: <IconPostgresql />,
+    },
 }
 
 
@@ -99,10 +114,10 @@ export const Icons = Object.keys(IconDictionary).map((key) => ({
     "icon": IconDictionary[key].icon,
 }));
 
-export default function GetChip(TechName){
+export default function GetChip(TechName, key){
     let icon = IconDictionary[TechName] ? IconDictionary[TechName].icon : null
     
     return(
-        <Chip sx={{ paddingLeft: '5px' }}  className="mt-2 mr-2" icon={icon} label={TechName} />
+        <Chip key={key} sx={{ paddingLeft: '5px' }}  className="mt-2 mr-2" icon={icon} label={TechName} />
     )
 }
