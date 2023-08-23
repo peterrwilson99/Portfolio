@@ -86,7 +86,6 @@ const ContactForm = () => {
     if (!validateForm()) {
       return;
     }
-    // Here you would typically handle form submission like sending the form data to a server
     const emailSent = await sendEmail();
 
     if (!emailSent) {
@@ -114,7 +113,7 @@ const ContactForm = () => {
             Send me an email!
           </Typography>
           <Typography variant="h6" gutterBottom align="center">
-            Feel free to send me an email, along with your email so I can get back to you. Looking forward to hearing from you 😀
+            Feel free to send me an email, along with your email so I can get back to you or contact me directly through my number on my resume. Looking forward to hearing from you 😀
           </Typography>
           <TextField
             variant="outlined"

@@ -33,9 +33,6 @@ function Footer() {
             <IconButton sx={{width: 36, height: 36 }} color="primary" onClick={() => window.open('https://www.linkedin.com/in/peterrwilson99/')}>
                 <LinkedInIcon sx={{width: 36, height: 36 }} fontSize="inherit" />
             </IconButton>
-            <IconButton sx={{width: 36, height: 36 }} color="primary" href='/contact'>
-                <EmailIcon sx={{width: 36, height: 36 }} fontSize="inherit" />
-            </IconButton>
             <IconButton sx={{width: 36, height: 36 }} color="primary" onClick={() => window.open('https://github.com/peterrwilson99')}>
                 <GitHubIcon sx={{width: 36, height: 36 }} fontSize="inherit" />
             </IconButton>

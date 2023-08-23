@@ -3,10 +3,10 @@ import React from 'react'
 import IconNextjs from '../../components/icons/IconNext';
 import IconAuth0 from '../../components/icons/IconAuth0';
 import IconPrisma from '../../components/icons/IconPrisma';
-import IconPostgresql from '../../components/icons/IconPostgreSQL';
 import IconExpress from '../../components/icons/IconExpress';
 import IconMui from '../../components/icons/IconMui';
 import TechStackList from '../TechStackList';
+import IconPostgresql from '../../components/icons/IconPostgreSQL';
 
 function IndividualPursuits() {
   const tools = [
@@ -38,7 +38,7 @@ function IndividualPursuits() {
     {
       title: "PostgreSQL",
       subtitle: "Relational Database",
-      icon: <IconPostgresql />,
+      icon: <IconPostgresql />
     },
   ]
   return (
