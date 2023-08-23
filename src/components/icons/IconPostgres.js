@@ -1,7 +1,7 @@
 // icon:postgresql | Simple Icons https://simpleicons.org | SimpleIcons.org
 import * as React from "react";
 
-function IconPostgresql(props) {
+function IconPostgres(props) {
   return (
     <svg
       viewBox="0 0 24 24"
@@ -15,4 +15,4 @@ function IconPostgresql(props) {
   );
 }
 
-export default IconPostgresql;
+export default IconPostgres;

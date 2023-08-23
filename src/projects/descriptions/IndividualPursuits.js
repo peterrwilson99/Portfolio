@@ -6,7 +6,7 @@ import IconPrisma from '../../components/icons/IconPrisma';
 import IconExpress from '../../components/icons/IconExpress';
 import IconMui from '../../components/icons/IconMui';
 import TechStackList from '../TechStackList';
-import IconPostgresql from '../../components/icons/IconPostgreSQL';
+import IconPostgres from '../../components/icons/IconPostgres';
 
 function IndividualPursuits() {
   const tools = [
@@ -38,7 +38,7 @@ function IndividualPursuits() {
     {
       title: "PostgreSQL",
       subtitle: "Relational Database",
-      icon: <IconPostgresql />
+      icon: <IconPostgres />
     },
   ]
   return (
