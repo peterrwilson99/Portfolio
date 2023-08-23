@@ -1,11 +1,11 @@
 import { Box, Button, Container, Typography, Avatar, styled, Collapse, Tooltip, IconButton, useTheme, useMediaQuery, Grid } from '@mui/material';
-import IconGallery from './IconGallery';
 import SlideIn from './SlideIn';
 import AboutCarousel from './AboutCarousel';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import VisibilitySensor from 'react-visibility-sensor';
 import { useEffect, useState } from 'react';
+import IconDisplay from './IconDisplay';
 
 export default function About() {
     const theme = useTheme();
@@ -99,7 +99,7 @@ export default function About() {
                                 </Typography>
                             </Container>
                             <Container maxWidth="lg" className="m-auto text-center mt-12">
-                                <IconGallery />
+                                <IconDisplay />
                             </Container>
                         </Box>
                     </AboutMeSection>
