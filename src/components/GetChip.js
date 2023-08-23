@@ -19,7 +19,7 @@ import IconNumpy from "./icons/IconNumpy"
 import IconSelenium from "./icons/IconSelenium"
 import IconAuth0 from "./icons/IconAuth0"
 import IconPrisma from "./icons/IconPrisma"
-import IconPostgresql from "./icons/IconPostgreSQL"
+import IconPostgres from "./icons/IconPostgres"
 
 export const IconDictionary = {
     'Next.js': {
@@ -104,7 +104,7 @@ export const IconDictionary = {
     },
     'PostgreSQL': {
         color: "",
-        icon: <IconPostgresql />,
+        icon: <IconPostgres />,
     },
 }
 
