@@ -43,6 +43,9 @@ function IndividualPursuits() {
   ]
   return (
     <div>
+        <Typography variant="subtitle1" className="text-center mb-4">
+          Please note all names and identifying information in application screenshots are generated names not linking to actual individuals.
+        </Typography>
         <Typography variant="h6">
           Problem Background and Project Description
         </Typography>

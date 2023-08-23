@@ -6,7 +6,13 @@ export const projects = [
         preview: "A web application to track goals and progress for people with developmental disabilities.",
         description: 'individual-pursuits',
         images: [
-            "https://github.com/MarcusDunn/day-trader/blob/main/readmeimages/1.png?raw=true",
+            "/images/ip1.png",
+            "/images/ip2.png",
+            "/images/ip3.png",
+            "/images/ip4.png",
+            "/images/ip5.png",
+            "/images/ip6.png"
+
         ],
         github: null,
         website: null,
