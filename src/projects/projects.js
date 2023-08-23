@@ -6,8 +6,8 @@ export const projects = [
         preview: "A distributed web application to track goals and progress for people with developmental disabilities.",
         description: 'individual-pursuits',
         images: [
-            "/images/ip1.png",
             "/images/ip2.png",
+            "/images/ip1.png",
             "/images/ip3.png",
             "/images/ip4.png",
             "/images/ip5.png",
