@@ -53,7 +53,7 @@ export default function About() {
     
     
     return (
-        <Container maxWidth="lg" className="mb-12">
+        <Container sx={{padding: 0}} maxWidth="lg" className="mb-12">
             <SlideIn>
                 <Grid container>
                     <Grid item xs={12} sm={6} className="py-6 flex flex-col justify-center">
