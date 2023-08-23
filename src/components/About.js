@@ -69,8 +69,8 @@ export default function About() {
                         </div>
                         <Typography variant="body1" className="text-xl" color="text.secondary" textAlign={matches ? "center" : "left"} paragraph>
                             Hello! I'm Peter Wilson, a Full-Stack Software Engineer based in Victoria, British Columbia.
-                            From a young age, I've been captivated by how things work and and business. Now I'm a software engineer 
-                            with a passion for building web applications and solving business problems.
+                            From a young age, I've been captivated by how things and businesses worked. Now I'm a software engineer 
+                            with a passion for building web applications and building technology for solving business problems.
                         </Typography>
                     </Grid>
                     {matches ?
