@@ -1,9 +1,9 @@
 export const projects = [
     {
         id: "0",
-        name: "Individual Pursuits - Distributed Web Application",
+        name: "Individual Pursuits",
         date: "April 2022",
-        preview: "A web application to track goals and progress for people with developmental disabilities.",
+        preview: "A distributed web application to track goals and progress for people with developmental disabilities.",
         description: 'individual-pursuits',
         images: [
             "/images/ip1.png",
