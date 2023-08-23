@@ -1,7 +1,7 @@
 export const projects = [
     {
         id: "0",
-        name: "Individual Pursuits",
+        name: "Individual Pursuits - Distributed Web Application",
         date: "April 2022",
         preview: "A web application to track goals and progress for people with developmental disabilities.",
         description: 'individual-pursuits',

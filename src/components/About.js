@@ -68,7 +68,9 @@ export default function About() {
                             </Typography>
                         </div>
                         <Typography variant="body1" className="text-xl" color="text.secondary" textAlign={matches ? "center" : "left"} paragraph>
-                            Hello! I'm Peter Wilson, a Full-Stack Software Engineer based in Victoria, British Columbia. From a young age, I've been captivated by the transformative power of technology and programming, which led me to pursue a career in software development. I am a graduate of the University of Victoria's Software Engineering program.
+                            Hello! I'm Peter Wilson, a Full-Stack Software Engineer based in Victoria, British Columbia.
+                            From a young age, I've been captivated by how things work and and business. Now I'm a software engineer 
+                            with a passion for building web applications and solving business problems.
                         </Typography>
                     </Grid>
                     {matches ?
@@ -91,7 +93,9 @@ export default function About() {
                                     My Skills
                                 </Typography>
                                 <Typography variant="body1" className="text-xl text-center" color="text.secondary" paragraph>
-                                    Professionally, I specialize in JavaScript, ReactJS, Express.js, Next.js, and Python, among others. I love diving into challenging projects, creating clean, maintainable code, and finding innovative solutions. My background in sales has equipped me with a unique perspective in understanding and meeting user requirements and working in teams.
+                                    Professionally, I specialize in JavaScript, ReactJS, Express.js, Next.js, and Python, among others. 
+                                    I love diving into challenging projects, creating clean, maintainable code, and working with new development teams. 
+                                    My background in sales has equipped me with a unique perspective in understanding and meeting user requirements and working in teams.
                                 </Typography>
                             </Container>
                             <Container maxWidth="lg" className="m-auto text-center mt-12">
@@ -109,7 +113,10 @@ export default function About() {
                                         Beyond the Office
                                     </Typography>
                                     <Typography variant="body1" className="text-xl" color="text.secondary" paragraph >
-                                        Beyond the world of code, there's a lot more to me. I love powerlifting, going snowboarding, and playing basketball. I have been riding motorcycles since I was 6 years old, and nowadays I ride trials and sport bikes. I also enjoy wrenching on cars, and I'm currently working on a 2002 BMW 330i. I love walking my puppy, a 5-month-old Chocolate Labrador.
+                                        Beyond the world of code, there's a lot more to me. I love powerlifting, going snowboarding, and playing basketball. 
+                                        I have also been riding motorcycles since I was a child, and nowadays I ride trials and sport bikes. 
+                                        I also enjoy wrenching on cars, and my current money pit is my 2002 BMW 330i which never leaves me without work to do. 
+                                        I am a huge dog lover, and spend most of my freetime hanging out with my puppy Enzo.
                                     </Typography>
                                 </Grid>
                                 <Grid item xs={12} md={6} >
