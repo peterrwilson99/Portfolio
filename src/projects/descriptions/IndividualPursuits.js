@@ -50,7 +50,7 @@ function IndividualPursuits() {
           Problem Background and Project Description
         </Typography>
         <Typography variant="body1">
-          Individual Pursuits is a group home for people with developmental disabilities with ranging needs and levels of independence. 
+          Individual Pursuits is a community social services organization specializing in both residential supports and community inclusion programs for persons with a developmental disability.
           For goal tracking, they use a paper-based system that is difficult to maintain and track. The goal of this project is to create 
           a web application that will allow staff to track goals and progress for each individual.
         </Typography>
