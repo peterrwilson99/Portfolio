@@ -1,5 +1,25 @@
 export const projects = [
     {
+        id: "0",
+        name: "Individual Pursuits",
+        date: "April 2022",
+        preview: "A distributed web application to track goals and progress for people with developmental disabilities.",
+        description: 'individual-pursuits',
+        images: [
+            "/images/ip2.png",
+            "/images/ip1.png",
+            "/images/ip3.png",
+            "/images/ip4.png",
+            "/images/ip5.png",
+            "/images/ip6.png"
+
+        ],
+        github: null,
+        website: null,
+        tags: ["Next.js", "Express.js", "Auth0", "MUI", "React", "TypeScript", "Docker", "PostgreSQL", "Prisma", "SendGrid"],
+        jsx_description: true,
+    },
+    {
         id: "1",
         name: "Scalable Day Trading Application",
         date: "April 2023",

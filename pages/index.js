@@ -8,16 +8,12 @@ import ContactForm from '../src/components/ContactForm';
 
 
 export default function Index() {
-  const theme = useTheme();
-  const TwoCol = useMediaQuery(theme.breakpoints.down(1800));
-  const OneCol = useMediaQuery(theme.breakpoints.down(1200));
-  // only display one row of projects
   
 
   return (
     <main>
       <Hero />
-      {/* <About /> */}
+      <About />
       <ProjectHighlight projects={projects}/>
       {/* <Container maxWidth="md">
         <ContactForm />

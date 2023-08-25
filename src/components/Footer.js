@@ -7,8 +7,10 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 
 import EmailIcon from '@mui/icons-material/Email';
+import WorkOutlineIcon from '@mui/icons-material/WorkOutline';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import { Tooltip } from '@mui/material';
 
 function Footer() {
   return (
@@ -33,9 +35,11 @@ function Footer() {
             <IconButton sx={{width: 36, height: 36 }} color="primary" onClick={() => window.open('https://www.linkedin.com/in/peterrwilson99/')}>
                 <LinkedInIcon sx={{width: 36, height: 36 }} fontSize="inherit" />
             </IconButton>
-            <IconButton sx={{width: 36, height: 36 }} color="primary" href='/contact'>
-                <EmailIcon sx={{width: 36, height: 36 }} fontSize="inherit" />
-            </IconButton>
+            <Tooltip title="Resume">
+                <IconButton sx={{width: 36, height: 36 }} color="primary" onClick={() => window.open('/files/resume.pdf')}>
+                    <WorkOutlineIcon sx={{width: 36, height: 36 }} fontSize="inherit" />
+                </IconButton>
+            </Tooltip>
             <IconButton sx={{width: 36, height: 36 }} color="primary" onClick={() => window.open('https://github.com/peterrwilson99')}>
                 <GitHubIcon sx={{width: 36, height: 36 }} fontSize="inherit" />
             </IconButton>

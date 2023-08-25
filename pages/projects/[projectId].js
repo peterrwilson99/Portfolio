@@ -6,19 +6,19 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LanguageIcon from "@mui/icons-material/Language";
 import SimilarProjects from "../../src/components/SimilarProjects";
 import Head from "next/head";
+import { descriptions } from "../../src/projects/descriptions/descriptions";
 
 function ProjectView({ project, similarProjects }) {
-  const { id, name, date, preview, description, images, website, github, tags } =
+  const { id, name, date, preview, description, images, website, github, tags, jsx_description } =
     project;
-  const formattedDescription = description
+  console.log(jsx_description);
+  const formattedDescription = jsx_description ? descriptions[description] : description
     .split("\n")
     .map((paragraph, index) => (
       <Typography variant="body1" className="text-lg" gutterBottom key={index}>
         {paragraph}
       </Typography>
     ));
-  // choose 3 random projects to suggest
-  console.log(similarProjects);
 
   return (
     <main className="pt-12">
