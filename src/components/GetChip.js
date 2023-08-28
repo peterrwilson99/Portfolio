@@ -20,6 +20,8 @@ import IconSelenium from "./icons/IconSelenium"
 import IconAuth0 from "./icons/IconAuth0"
 import IconPrisma from "./icons/IconPrisma"
 import IconPostgres from "./icons/IconPostgres"
+import IconSpring from "./icons/IconSpring"
+import IconJava from "./icons/IconJava"
 
 export const IconDictionary = {
     'Next.js': {
@@ -106,6 +108,14 @@ export const IconDictionary = {
         color: "",
         icon: <IconPostgres />,
     },
+    'Spring': {
+        color: "",
+        icon: <IconSpring />,
+    },
+    'Java': {
+        color: "",
+        icon: <IconJava />,
+    }
 }
 
 
