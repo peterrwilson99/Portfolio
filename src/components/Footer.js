@@ -20,7 +20,7 @@ function Footer() {
             spacing={2}
             justifyContent="center"
             >
-            <Avatar className="text-center" alt="Peter Wilson" src="/TempHeadshot.png" />
+            <Avatar className="text-center" alt="Peter Wilson" src="/headshot-close.jpeg" />
             <Typography variant="h6" align="center" gutterBottom>
                 Peter Wilson
             </Typography>

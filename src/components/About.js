@@ -59,7 +59,7 @@ export default function About() {
                     <Grid item xs={12} sm={6} className="py-6 flex flex-col justify-center">
                         <div className={matches ? "flex justify-center gap-5 items-center mb-4" : ""}>
                             {matches ?
-                                <Avatar sx={{width: 80, height: 80}} src="/TempHeadshot.png"/>
+                                <Avatar sx={{width: 80, height: 80}} src="/headshot-close.jpeg"/>
                                 :
                                 <></>
                             }
@@ -78,7 +78,7 @@ export default function About() {
                         :
                         <Grid item xs={12} sm={6} className="flex justify-end align-middle items-center">
                             <Box display="flex" justifyContent="center">
-                                <Avatar sx={{width: avatarSize, height: avatarSize}} src="/TempHeadshot.png"/>
+                                <Avatar sx={{width: avatarSize, height: avatarSize}} src="/headshot-close.jpeg"/>
                             </Box>
                         </Grid>
                     }
