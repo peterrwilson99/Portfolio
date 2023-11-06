@@ -1,5 +1,4 @@
-import { Box, Button, ButtonBase } from '@mui/material';
-import Image from 'next/image';
+import { Box, ButtonBase } from '@mui/material';
 import React, { useState } from 'react'
 
 function ImageGallery({ images }) {
@@ -12,7 +11,7 @@ function ImageGallery({ images }) {
 
   return (
     <Box className="my-4">
-      <div className="selected-image">
+      <div className="selected-image md:min-h-[500px]">
         <img src={selectedImage} alt="" />
       </div>
       {images.length  && images.length > 1 ? 

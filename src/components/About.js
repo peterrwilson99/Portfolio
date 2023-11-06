@@ -104,28 +104,26 @@ export default function About() {
                         </Box>
                     </AboutMeSection>
                 </SlideIn>
-                <SlideIn>
-                    <AboutMeSection>
-                        <Container maxWidth="lg" className="m-auto">
-                            <Grid container spacing={5} alignItems="center">
-                                <Grid item xs={12} md={6}  className="py-6 flex flex-col justify-center">
-                                    <Typography variant={typographyVariant} gutterBottom sx={{mt: 2}}>
-                                        Beyond the Office
-                                    </Typography>
-                                    <Typography variant="body1" className="text-xl" color="text.secondary" paragraph >
-                                        Beyond the world of code, there's a lot more to me. I love powerlifting, going snowboarding, and playing basketball. 
-                                        I have also been riding motorcycles since I was a child, and nowadays I ride trials and sport bikes. 
-                                        I also enjoy wrenching on cars, and my current money pit is my 2002 BMW 330i which never leaves me without work to do. 
-                                        I am a huge dog lover, and spend most of my freetime hanging out with my puppy Enzo.
-                                    </Typography>
-                                </Grid>
-                                <Grid item xs={12} md={6} >
-                                    <AboutCarousel />
-                                </Grid>
+                <AboutMeSection>
+                    <Container maxWidth="lg" className="m-auto">
+                        <Grid container spacing={5} alignItems="center">
+                            <Grid item xs={12} md={6}  className="py-6 flex flex-col justify-center">
+                                <Typography variant={typographyVariant} gutterBottom sx={{mt: 2}}>
+                                    Beyond the Office
+                                </Typography>
+                                <Typography variant="body1" className="text-xl" color="text.secondary" paragraph >
+                                    Beyond the world of code, there's a lot more to me. I love powerlifting, going snowboarding, and playing basketball. 
+                                    I have also been riding motorcycles since I was a child, and nowadays I ride trials and sport bikes. 
+                                    I also enjoy wrenching on cars, and my current money pit is my 2002 BMW 330i which never leaves me without work to do. 
+                                    I am a huge dog lover, and spend most of my freetime hanging out with my puppy Enzo.
+                                </Typography>
                             </Grid>
-                        </Container>
-                    </AboutMeSection>
-                </SlideIn>
+                            <Grid item xs={12} md={6} >
+                                <AboutCarousel />
+                            </Grid>
+                        </Grid>
+                    </Container>
+                </AboutMeSection>
             </Collapse>
             <div className="text-right">
                 <VisibilitySensor onChange={onVisibilityChange}>

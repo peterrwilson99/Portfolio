@@ -20,7 +20,7 @@ function Hero() {
             >
                 <Typewriter
                     options={{
-                        strings: ['a Developer', 'an Engineer', ''],
+                        strings: ['a Developer', 'an Engineer in Training', ''],
                         autoStart: true,
                         loop: true,
                         pauseFor: 2000

@@ -22,6 +22,7 @@ import IconPrisma from "./icons/IconPrisma"
 import IconPostgres from "./icons/IconPostgres"
 import IconSpring from "./icons/IconSpring"
 import IconJava from "./icons/IconJava"
+import IconNpm from "./icons/IconNpm"
 
 export const IconDictionary = {
     'Next.js': {
@@ -115,6 +116,10 @@ export const IconDictionary = {
     'Java': {
         color: "",
         icon: <IconJava />,
+    },
+    'npm': {
+        color: "",
+        icon: <IconNpm />,
     }
 }
 

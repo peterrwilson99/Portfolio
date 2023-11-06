@@ -18,6 +18,24 @@ export const projects = [
         website: null,
         tags: ["Next.js", "Express.js", "Auth0", "MUI", "React", "TypeScript", "Docker", "PostgreSQL", "Prisma", "SendGrid"],
         jsx_description: true,
+    },   
+    {
+        id: "13",
+        name: "MUI Form Builder (NPM Package)",
+        date: "September 2023",
+        preview: "A React component library for building forms using MaterialUI components. Published as an NPM package.",
+        description: 'form-builder',
+        jsx_description: true,
+        images: [
+            "/images/formbuilder2.png",
+            "/images/formbuilder5.png",
+            "/images/formbuilder3.png",
+            "/images/formbuilder4.png",
+            "/images/formbuilder1.png",
+        ],
+        github: "https://github.com/peterrwilson99/form-builder-mui",
+        website: 'https://www.npmjs.com/package/form-builder-mui',
+        tags: ["npm", "MUI", "React", "TypeScript"]
     },
     {
         id: "1",
@@ -192,7 +210,6 @@ export function getSimilarProjects(projectToCompare){
     
     // if similarProjects.length > 3, return the first 3
     if(similarProjects.length > 3){
-        console.log("SimilarProjects.length", similarProjects.length)
         return similarProjects.slice(0, 3)
     }
 

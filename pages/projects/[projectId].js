@@ -9,9 +9,8 @@ import Head from "next/head";
 import { descriptions } from "../../src/projects/descriptions/descriptions";
 
 function ProjectView({ project, similarProjects }) {
-  const { id, name, date, preview, description, images, website, github, tags, jsx_description } =
+  const { id, name, date, description, images, website, github, jsx_description } =
     project;
-  console.log(jsx_description);
   const formattedDescription = jsx_description ? descriptions[description] : description
     .split("\n")
     .map((paragraph, index) => (
@@ -26,8 +25,8 @@ function ProjectView({ project, similarProjects }) {
         <title>{name} - Peter Wilson</title>
       </Head>
       <Container maxWidth="md">
-        <ImageGallery images={images} className="my-4" />
-        <Typography variant="h3" component="h2">
+        <ImageGallery images={images} />
+        <Typography variant="h3" component="h2" gutterBottom>
           {name}
         </Typography>
         <div className="flex flex-row justify-between w-full mb-4">
