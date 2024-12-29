@@ -1,19 +1,14 @@
-import { Box } from '@mui/material';
-import React from 'react'
-import { Carousel } from 'react-responsive-carousel';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Box } from "@mui/material";
+import React from "react";
+// import { Carousel } from 'react-responsive-carousel';
+// import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 function AboutCarousel() {
-    const aboutImages = [
-        '/enzo.jpg',
-        '/trialsbike.jpg',
-        '/powerlifting.gif',
-        '/snowboarding.png',
-    ]
+    const aboutImages = ["/enzo.jpg", "/trialsbike.jpg", "/powerlifting.gif", "/snowboarding.png"];
 
     return (
         <Box className="w-full">
-            <Carousel
+            {/* <Carousel
                 autoPlay
                 infiniteLoop
                 interval={7000}
@@ -26,9 +21,9 @@ function AboutCarousel() {
                     <Box key={index} className="m-auto" sx={{height: '450px', width: '450px', backgroundImage: `url('${image}')`, backgroundPosition: 'right', backgroundSize: 'cover', borderRadius: 4}}>
                     </Box>
                 ))}
-            </Carousel>
+            </Carousel> */}
         </Box>
-    )
+    );
 }
 
-export default AboutCarousel
+export default AboutCarousel;
