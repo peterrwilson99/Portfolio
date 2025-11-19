@@ -23,6 +23,7 @@ import IconPostgres from "./icons/IconPostgres";
 import IconSpring from "./icons/IconSpring";
 import IconJava from "./icons/IconJava";
 import IconNpm from "./icons/IconNpm";
+import IconDigitalOcean from "./icons/IconDigitalOcean";
 
 export const IconDictionary = {
     "Next.js": {
@@ -120,6 +121,10 @@ export const IconDictionary = {
     npm: {
         color: "",
         icon: <IconNpm />,
+    },
+    DigitalOcean: {
+        color: "",
+        icon: <IconDigitalOcean />,
     },
 };
 

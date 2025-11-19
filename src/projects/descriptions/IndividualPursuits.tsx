@@ -1,12 +1,12 @@
 import { Divider, Grid, Typography } from "@mui/material";
 import React from "react";
 import IconNextjs from "../../components/icons/IconNext";
-import IconAuth0 from "../../components/icons/IconAuth0";
 import IconPrisma from "../../components/icons/IconPrisma";
 import IconExpress from "../../components/icons/IconExpress";
 import IconMui from "../../components/icons/IconMui";
 import TechStackList, { Tool } from "../TechStackList";
 import IconPostgres from "../../components/icons/IconPostgres";
+import IconDigitalOcean from "../../components/icons/IconDigitalOcean";
 
 function IndividualPursuits() {
     const tools: Tool[] = [
@@ -14,6 +14,11 @@ function IndividualPursuits() {
             title: "Next.js",
             subtitle: "Frontend Framework",
             icon: <IconNextjs />,
+        },
+        {
+            title: "DigitalOcean",
+            subtitle: "Cloud Hosting",
+            icon: <IconDigitalOcean />,
         },
         {
             title: "Material UI",
@@ -24,11 +29,6 @@ function IndividualPursuits() {
             title: "Express.js",
             subtitle: "Backend Framework built with TypeScript",
             icon: <IconExpress />,
-        },
-        {
-            title: "Auth0",
-            subtitle: "Authentication Service",
-            icon: <IconAuth0 />,
         },
         {
             title: "Prisma",
@@ -85,8 +85,10 @@ function IndividualPursuits() {
                         use and familiar design for end users.
                     </Typography>
                     <Typography variant="body1" className="mt-4">
-                        The backend was built using Express.js, a Node.js framework with TypeScript utilizing REST. Auth0 was used for authentication and
-                        authorization, integrated into our backend using Auth0's Node.js SDK.
+                        The backend was built using Express.js, a Node.js framework with TypeScript utilizing REST. The application uses an in-house
+                        authentication system harnessing JWT (JSON Web Tokens) for secure authentication. The system supports role-based access control to
+                        ensure that only authorized staff can access pertinent information, and includes API access management that can be created and
+                        configured through the UI.
                     </Typography>
                     <Typography variant="body1" className="mt-4">
                         The database was built using PostgreSQL, a relational database. Prisma was used as an ORM to simplify database interactions and to
@@ -97,8 +99,8 @@ function IndividualPursuits() {
             <Divider className="my-4" />
             <Typography variant="h6">Project Status</Typography>
             <Typography variant="body1">
-                The application is currently in the user testing phase, where it is being tested by the business stakeholders. The application is expected to be
-                deployed in the coming months to either DigitalOcean or AWS, and Vercel.
+                The application is now deployed on DigitalOcean and is being used regularly by several group homes. The system has successfully replaced the
+                paper-based goal tracking system and provides staff with an efficient way to track goals and progress for each individual.
             </Typography>
         </div>
     );
